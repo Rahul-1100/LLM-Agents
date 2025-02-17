@@ -1065,3 +1065,5 @@ To verify the relationship \( V = IR \) by measuring voltage (V), current (I), a
    - Disconnect all components and ensure no residual current is present before handling further.
 
 By following these steps carefully, you can safely and accurately verify Ohm's Law through experimental observation. Ensure that each step is meticulously executed to obtain reliable results.
+---
+# 1 To study the magnetic field produced by a solenoid and verify the relationship between current and magnetic field strength.

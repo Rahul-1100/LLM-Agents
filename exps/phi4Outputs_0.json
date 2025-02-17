@@ -1,0 +1,232 @@
+{
+    "experiments": [
+        {
+            "title": "Experiment Plan: Studying Magnetic Field of a Solenoid",
+            "objective": "To study the magnetic field produced by a solenoid and verify the relationship between current and magnetic field strength.",
+            "materials": [
+                "Solenoid coil",
+                "Variable DC power supply",
+                "Ammeter",
+                "Voltmeter",
+                "Gaussmeter or magnetometer",
+                "Connecting wires",
+                "Insulated gloves",
+                "Protective eyewear"
+            ],
+            "procedure": {
+                "procedure": {
+                    "1. Setup": [
+                        "Place the solenoid on a non-conductive surface.",
+                        "Connect the solenoid in series with the power supply, ammeter, and voltmeter."
+                    ],
+                    "2. Measurement": [
+                        "Gradually increase the current through the solenoid using the variable DC power supply.",
+                        "At each step of increased current, measure and record the voltage across the solenoid using the voltmeter.",
+                        "Simultaneously, use the gaussmeter or magnetometer to measure the magnetic field strength at the center of the solenoid."
+                    ],
+                    "3. Data Recording": [
+                        "Record all measurements (current, voltage, magnetic field strength) in a table for subsequent analysis."
+                    ]
+                }
+            }
+        },
+        {
+            "title": "Experiment Plan: Generating and Analyzing Lissajous Figures Using an Oscilloscope",
+            "objective": "To generate and analyze Lissajous figures by applying two sinusoidal signals with different frequencies to an oscilloscope.",
+            "materials": [
+                "Oscilloscope",
+                "Signal generator (capable of producing sinusoidal waves)",
+                "Probes for oscilloscope connections",
+                "Power supply"
+            ],
+            "procedure": {
+                "procedure": {
+                    "step1": {
+                        "description": [
+                            "Connect the signal generator's output to the X input of the oscilloscope using a probe."
+                        ],
+                        "safety": [
+                            "Ensure all electrical connections are secure."
+                        ]
+                    },
+                    "step2": {
+                        "description": [
+                            "Connect another output from the signal generator to the Y input using a second probe."
+                        ],
+                        "safety": [
+                            "Avoid exposed wires or components to prevent electrical hazards."
+                        ]
+                    },
+                    "step3": {
+                        "description": [
+                            "Set initial frequencies and amplitudes for both signals on the signal generator."
+                        ],
+                        "safety": [
+                            "Use the oscilloscope within its specified voltage and frequency limits."
+                        ]
+                    },
+                    "step4": {
+                        "description": [
+                            "Observe the Lissajous figure displayed on the oscilloscope screen."
+                        ],
+                        "safety": []
+                    }
+                }
+            }
+        },
+        {
+            "title": "Experiment Plan: Measuring Input and Output Impedances of an Operational Amplifier (Op-Amp)",
+            "objective": "To measure the input and output impedances of an Op-Amp in a specified configuration while ensuring safety and accuracy.",
+            "materials": [
+                "Signal generator",
+                "Oscilloscope",
+                "Multimeter",
+                "Resistors",
+                "Power supply",
+                "Breadboard or circuit board"
+            ],
+            "procedure": {
+                "procedure": {
+                    "step1": {
+                        "description": [
+                            "Identify the Op-Amp configuration being used. Common configurations include inverting, non-inverting, voltage follower (buffer), summing amplifier, differential amplifier, integrator, and differentiator."
+                        ],
+                        "note": [
+                            "The specific configuration will determine the measurement method for input and output impedances."
+                        ]
+                    },
+                    "step2": {
+                        "description": [
+                            "Gather all necessary equipment. Ensure that you have a signal generator to provide known input signals, an oscilloscope to observe voltage changes, a multimeter to measure voltages and currents, resistors of various values for testing, and a power supply to power the Op-Amp circuit."
+                        ],
+                        "note": [
+                            "Ensure all equipment is in good working condition and properly calibrated."
+                        ]
+                    },
+                    "step3": {
+                        "description": [
+                            "Implement safety measures. This includes proper grounding of the setup, handling electrical components with care, and ensuring that the power supply voltage does not exceed the Op-Amp's maximum rating to prevent damage or hazards."
+                        ],
+                        "note": [
+                            "Always follow standard laboratory safety protocols."
+                        ]
+                    },
+                    "step4": {
+                        "description": [
+                            "Outline the experimental steps: Apply a known input signal using the signal generator. Measure the voltage across specific points in the circuit with an oscilloscope and multimeter. Calculate the input impedance by applying Ohm's Law (Z = V/I) where V is the input voltage and I is the current through the input."
+                        ],
+                        "note": [
+                            "Ensure that measurements are taken accurately to maintain precision."
+                        ]
+                    },
+                    "step5": {
+                        "description": [
+                            "Calculate the output impedance by measuring the change in output voltage when a known load resistor is connected across the Op-Amp's output. Use Ohm's Law again, considering the change in current and voltage."
+                        ],
+                        "note": [
+                            "Repeat measurements for different load resistances to ensure accuracy."
+                        ]
+                    },
+                    "step6": {
+                        "description": [
+                            "Document each step of the experiment meticulously. Record all observations, calculations, and any anomalies encountered during the process."
+                        ],
+                        "note": [
+                            "This documentation will aid in reproducibility and verification of results."
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "title": "Experiment Plan: Studying Magnetic Field Produced by a Solenoid",
+            "objective": "To study the magnetic field produced by a solenoid and verify the relationship between current and magnetic field strength.",
+            "materials": [
+                "Power supply (variable)",
+                "Ammeter",
+                "Voltmeter",
+                "Solenoid (coil of wire)",
+                "Iron core",
+                "Gauss meter or Hall effect sensor",
+                "Connecting wires",
+                "Insulated gloves"
+            ],
+            "procedure": {
+                "procedure": {
+                    "1. Setup": [
+                        "Connect the solenoid in series with an ammeter and a variable power supply.",
+                        "Ensure all electrical connections are secure to prevent short circuits."
+                    ],
+                    "2. Safety Precautions": [
+                        "Use insulated tools when handling electrical devices.",
+                        "Wear protective gear such as insulated gloves.",
+                        "Keep flammable materials away from the setup."
+                    ],
+                    "3. Experiment Execution": [
+                        "Insert an iron core into the solenoid to enhance magnetic field strength.",
+                        "Adjust the current using the variable power supply within the solenoid's rated capacity.",
+                        "Use a Gauss meter or Hall effect sensor to measure the magnetic field at various points along the solenoid's axis for different currents."
+                    ],
+                    "4. Data Collection": [
+                        "Vary the current incrementally and record the corresponding magnetic field strength measurements.",
+                        "Ensure consistent measurement conditions for accuracy."
+                    ]
+                }
+            }
+        },
+        {
+            "title": "Experiment Plan: Generating and Analyzing Lissajous Figures Using an Oscilloscope",
+            "objective": "To generate and analyze Lissajous figures by applying two sinusoidal signals with different frequencies to an oscilloscope.",
+            "materials": [
+                "Oscilloscope",
+                "Function Generator (Signal Generator)",
+                "Connecting Cables or Probes",
+                "Power Supply (if needed)"
+            ],
+            "procedure": {
+                "procedure": {
+                    "step1": {
+                        "description": [
+                            "Connect the function generator outputs to the X and Y inputs of the oscilloscope."
+                        ],
+                        "details": [
+                            "Ensure all connections are secure to prevent short circuits."
+                        ]
+                    },
+                    "step2": {
+                        "description": [
+                            "Set the signal generator to produce sinusoidal waves with desired frequencies for both channels."
+                        ],
+                        "details": [
+                            "Choose frequency ratios that will result in interesting Lissajous patterns, such as 1:1, 3:2, or other simple integer ratios."
+                        ]
+                    },
+                    "step3": {
+                        "description": [
+                            "Adjust the amplitude settings on the oscilloscope to ensure clear visibility of the figures."
+                        ],
+                        "details": [
+                            "Amplitude should be set so that the entire pattern fits comfortably within the display area without clipping."
+                        ]
+                    },
+                    "step4": {
+                        "description": [
+                            "Vary the phase difference between the two signals using the function generator's controls or software interface."
+                        ],
+                        "details": [
+                            "Observe how different phase differences affect the shape and orientation of the Lissajous figures."
+                        ]
+                    },
+                    "step5": {
+                        "description": [
+                            "Record observations of the patterns formed on the oscilloscope screen for analysis."
+                        ],
+                        "details": [
+                            "Note any changes in pattern as frequencies, amplitudes, or phases are adjusted."
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
