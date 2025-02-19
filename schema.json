@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "title": {
+            "description": "The title of the webpage or the blog",
+            "title": "Title",
+            "type": "string"
+        },
+        "content": {
+            "description": "Entire Main content of the webpage which is relevant to the title",
+            "title": "Content",
+            "type": "string"
+        }
+    },
+    "required": [
+        "title",
+        "content"
+    ],
+    "title": "ScrappedData",
+    "type": "object"
+}

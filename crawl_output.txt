@@ -1,0 +1,12 @@
+[
+    {
+        "title": "How to MIG Weld Mild Steel",
+        "content": "MIG welding mild steel is a popular method for joining metal pieces due to its speed and ease of use. This guide covers essential steps and tips for effective MIG welding on mild steel.\n\n**Preparation:**\n- **Clean the Metal:** Ensure that the surfaces are free from rust, paint, or oil. Use a wire brush or grinder if necessary.\n- **Set Up Your Welder:** Connect your gas cylinder to the welder and set it to 75% Argon / 25% Carbon Dioxide (C25) for mild steel. This blend provides good arc stability and penetration while minimizing spatter.\n\n**Welding Process:**\n1. **Tack Welds:** Start by placing tack welds at intervals along the joint to hold pieces in place.\n2. **Adjust Settings:** Use Auto-Set technology if available, or manually set voltage and wire feed speed based on metal thickness. For example:\n   - 24-gauge wire: ~18 volts\n   - 0.023-inch wire: ~22 volts\n3. **Welding Technique:** Maintain a consistent travel speed and keep the torch at a 10-15 degree angle to the workpiece. Use short, controlled movements.\n4. **Post-Weld Cleanup:** Grind down any excess weld material for a smooth finish.\n\n**Safety Tips:**\n- Always wear appropriate PPE including gloves, helmet with proper shade lens, and protective clothing.\n- Ensure good ventilation in your workspace to avoid inhaling fumes.\n",
+        "error": false
+    },
+    {
+        "title": "Miller Welding Products Newsletter Subscription",
+        "content": "This page provides information on how to subscribe to various newsletters from Miller Welding Products. Users can select from multiple newsletter options and provide their email address for subscription. The page includes details about privacy policies, terms of service, and error messages related to the subscription process. It also mentions that the site is protected by reCAPTCHA.",
+        "error": false
+    }
+]
