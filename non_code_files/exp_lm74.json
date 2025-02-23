@@ -1,0 +1,49 @@
+{
+    "experiments": [
+        {
+            "title": "To set up and test a unity gain amplifier using an IC 741 operational amplifier",
+            "objective": "To set up and test a unity gain amplifier using an IC 741 operational amplifier",
+            "materials": [
+                "Operational Amplifier IC (LM741)",
+                "Variable Resistor (10KΩ)",
+                "Resistor (1KΩ)",
+                "Input Signal Source (Function Generator)",
+                "Connecting Wires",
+                "Power Supply (9V)"
+            ],
+            "procedure": {
+                "power_supply_connections": [
+                    "Connect the positive terminal of the battery to pin 7 (V+) of the IC 741",
+                    "Connect the negative terminal of the battery to pin 4 (V-) of the IC 741"
+                ],
+                "input_signal_setup": [
+                    "Attach one end of the potentiometer to the positive supply voltage",
+                    "Connect the wiper (middle terminal) of the potentiometer to pin 3 (non-inverting input) of the op-amp",
+                    "Connect the other end of the potentiometer to ground"
+                ],
+                "feedback_loop": [
+                    "Connect a wire from pin 6 (output) directly to pin 2 (inverting input)"
+                ],
+                "load_resistor_connection": [
+                    "Attach one terminal of the 1 kΩ resistor to pin 6 (output)",
+                    "Connect the other terminal of the resistor to ground"
+                ],
+                "biasing_and_stability": [
+                    "Ensure pins 4 (V-) and 7 (V+) are properly connected for stable operation",
+                    "If necessary, connect a capacitor across V+ and V- for power supply decoupling"
+                ],
+                "testing_the_circuit": [
+                    "Turn on the power supply and adjust the potentiometer to vary the input voltage",
+                    "Measure the output voltage at pin 6 with a voltmeter",
+                    "Verify that the output voltage matches the input voltage"
+                ]
+            },
+            "analysis": [
+                "Verify that the output voltage matches the input voltage, confirming the unity gain configuration",
+                "Discuss the importance of negative feedback in achieving unity gain",
+                "Analyze the effect of the variable resistor on the input voltage and output voltage",
+                "Examine the role of the load resistor in the circuit and its impact on the output voltage"
+            ]
+        }
+    ]
+}
