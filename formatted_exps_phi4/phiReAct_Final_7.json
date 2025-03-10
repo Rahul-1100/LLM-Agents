@@ -1,0 +1,986 @@
+{
+    "experiments": [
+        {
+            "title": "To verify the relationship between voltage (V), current (I), and resistance (R) in an electrical circuit, as expressed by Ohm's Law: V=IR",
+            "objective": "To verify the relationship between voltage (V), current (I), and resistance (R) as expressed by Ohm's Law (\\( V = IR \\)), you can conduct a straightforward experiment. Below are the materials required, detailed steps for conducting the experiment, and essential safety procedures.",
+            "materials": [
+                "Resistor or Resistance Wire: Nichrome wire is commonly used.",
+                "Voltmeter: To measure voltage across the resistor.",
+                "Ammeter: To measure current through the circuit.",
+                "Connecting Wires: For making connections in the circuit.",
+                "Switch (Key): To open and close the circuit.",
+                "Power Source: A dry cell or battery eliminator to provide a constant voltage supply."
+            ],
+            "procedure": [
+                {
+                    "step": "Setup the Circuit",
+                    "details": "- Connect the resistor in series with an ammeter, ensuring that the current flows through the resistor. - Connect the voltmeter in parallel across the resistor to measure the potential difference (voltage) across it. - Integrate a switch into the circuit for easy control of the power supply."
+                },
+                {
+                    "step": "Initial Measurements",
+                    "details": "- Close the switch to complete the circuit and allow current to flow. - Record the initial readings from both the ammeter and voltmeter."
+                },
+                {
+                    "step": "Varying Voltage",
+                    "details": "- Adjust the voltage supplied by changing the number of cells in the battery or using a variable power supply if available. - For each change in voltage, record the corresponding current reading from the ammeter and the voltage reading from the voltmeter."
+                },
+                {
+                    "step": "Data Collection",
+                    "details": "- Repeat the above step for multiple values of voltage to gather sufficient data points. - Ensure that readings are taken when the circuit reaches a steady state (i.e., after any transient effects have settled)."
+                },
+                {
+                    "step": "Plotting the Graph",
+                    "details": "- Plot a graph with current (I) on the y-axis and voltage (V) on the x-axis. - The slope of the resulting straight line should give you the resistance \\( R \\), as per Ohm's Law (\\( V = IR \\))."
+                },
+                {
+                    "step": "Analysis",
+                    "details": "- Calculate the resistance for each data point using the formula \\( R = \\frac{V}{I} \\). - Verify that the calculated resistance remains constant, confirming Ohm\u2019s Law."
+                }
+            ]
+        },
+        {
+            "title": "To apply Kirchhoff\u2019s Voltage Law (KVL) and Kirchhoff\u2019s Current Law (KCL) to analyze and validate simple electrical circuits.",
+            "objective": "To conduct an experiment applying Kirchhoff\u2019s Voltage Law (KVL) and Kirchhoff\u2019s Current Law (KCL), you'll need specific materials, a clear procedure, and safety precautions. Here's a detailed guide:",
+            "materials": {
+                "Basic Components": [
+                    "Resistors of various resistances",
+                    "A DC power supply or batteries",
+                    "Connecting wires with alligator clips",
+                    "Breadboard (optional for easy connections)"
+                ],
+                "Measurement Tools": [
+                    "Multimeter (for measuring voltage and current)",
+                    "Ammeter (to measure current in the circuit)",
+                    "Voltmeter (to measure potential difference across components)"
+                ],
+                "Additional Equipment": [
+                    "Switches (to open/close circuits as needed)",
+                    "Circuit diagram for reference"
+                ]
+            },
+            "procedure": {
+                "Circuit Design": [
+                    "Draw a simple series or parallel circuit on paper, including resistors and power sources.",
+                    "Label all nodes, branches, and loops in the circuit."
+                ],
+                "Setup": [
+                    "Assemble the circuit on the breadboard using connecting wires and components as per your design.",
+                    "Ensure all connections are secure to prevent short circuits."
+                ],
+                "Applying KCL (Kirchhoff\u2019s Current Law)": [
+                    "Identify a junction or node in your circuit where multiple branches meet.",
+                    "Use an ammeter to measure the current entering and leaving the node.",
+                    "Verify that the sum of currents entering the node equals the sum of currents leaving it."
+                ],
+                "Applying KVL (Kirchhoff\u2019s Voltage Law)": [
+                    "Choose a closed loop in your circuit.",
+                    "Measure the voltage across each component using a voltmeter.",
+                    "Sum all measured voltages around the loop, ensuring they equal zero (considering polarity)."
+                ],
+                "Data Recording": [
+                    "Record all measurements and calculations for analysis."
+                ],
+                "Analysis": [
+                    "Compare experimental results with theoretical predictions based on KCL and KVL.",
+                    "Discuss any discrepancies and possible sources of error."
+                ]
+            }
+        },
+        {
+            "title": "To study the behavior of resistors in series and parallel configurations, including equivalent resistance calculation.",
+            "objective": "To study the behavior of resistors in series and parallel configurations, including equivalent resistance calculation, you will need specific materials and follow a detailed procedure. Here's how to set up your experiment:",
+            "materials": [
+                "- **Resistors**: A variety of resistors with known values (e.g., 100\u03a9, 220\u03a9, 330\u03a9).",
+                "- **Power Supply**: A DC power supply or battery.",
+                "- **Multimeter**: For measuring voltage and current.",
+                "- **Breadboard**: To easily set up circuits without soldering.",
+                "- **Connecting Wires**: Jumper wires for making connections.",
+                "- **Switches** (optional): To control the circuit."
+            ],
+            "procedure": {
+                "Series Configuration": [
+                    "1. **Setup**: Connect three resistors end-to-end on a breadboard using jumper wires, ensuring they are in series with each other and connected to the power supply.",
+                    "2. **Measure Total Resistance**: Use the multimeter to measure the total resistance across the entire series circuit.",
+                    "3. **Calculate Theoretical Equivalent Resistance**: Add the resistance values of all resistors (\\(R_{eq} = R_1 + R_2 + R_3\\)).",
+                    "4. **Measure Voltage and Current**:",
+                    "- Measure the voltage across each resistor and the total voltage across the series.",
+                    "- Measure the current through the circuit using the multimeter in series with the power supply.",
+                    "5. **Verify Ohm\u2019s Law**: Ensure that \\(V = IR\\) holds true for each resistor and the entire circuit."
+                ],
+                "Parallel Configuration": [
+                    "1. **Setup**: Connect three resistors to a breadboard such that all their one ends are connected together, and the other ends are also connected together, forming parallel branches.",
+                    "2. **Measure Total Resistance**: Use the multimeter to measure the total resistance across the parallel configuration.",
+                    "3. **Calculate Theoretical Equivalent Resistance**:",
+                    "- Use the formula for resistors in parallel: \\(\\frac{1}{R_{eq}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3}\\).",
+                    "4. **Measure Voltage and Current**:",
+                    "- Measure the voltage across each resistor (should be the same for all).",
+                    "- Measure the current through each branch using the multimeter.",
+                    "5. **Verify Ohm\u2019s Law**: Ensure that \\(V = IR\\) holds true for each branch and the total circuit."
+                ],
+                "Series-Parallel Configuration": [
+                    "1. **Setup**: Create a combination of series and parallel resistors on the breadboard, such as two resistors in parallel connected in series with another resistor.",
+                    "2. **Measure Total Resistance**: Use the multimeter to measure the total resistance across the entire configuration.",
+                    "3. **Calculate Theoretical Equivalent Resistance**:",
+                    "- First calculate the equivalent resistance for the parallel section.",
+                    "- Add this result to the series resistor's value.",
+                    "4. **Measure Voltage and Current**:",
+                    "- Measure voltage drops across each section.",
+                    "- Measure current through different parts of the circuit as needed.",
+                    "5. **Verify Ohm\u2019s Law**: Ensure that \\(V = IR\\) holds true for each part of the configuration."
+                ],
+                "Safety Procedures": [
+                    "- **Power Off First**: Always turn off or disconnect the power supply before making changes to the circuit.",
+                    "- **Use Proper Tools**: Handle all equipment with care, using insulated tools where necessary.",
+                    "- **Avoid Short Circuits**: Ensure connections are secure and avoid creating short circuits by touching wires together unintentionally.",
+                    "- **Monitor Current Levels**: Do not exceed the current rating of your resistors or power supply to prevent overheating or damage."
+                ]
+            }
+        },
+        {
+            "title": "To study the forward and reverse bias characteristics of a PN junction diode.",
+            "objective": "To study the forward and reverse bias characteristics of a PN junction diode, you will need specific materials and follow a detailed procedure. Here's how to set up and conduct your experiment:",
+            "materials": [
+                "PN Junction Diode: The primary component for this experiment.",
+                "DC Power Supply: To provide variable voltage for forward and reverse biasing.",
+                "Multimeter: For measuring current and verifying connections.",
+                "Breadboard or Circuit Board: To assemble the circuit components easily.",
+                "Connecting Wires: For making electrical connections between components.",
+                "Resistors: Typically a 1k\u03a9 resistor to limit current through the diode.",
+                "Oscilloscope (optional): For visualizing I-V characteristics if available.",
+                "Voltmeter and Ammeter: To measure voltage across and current through the diode."
+            ],
+            "procedure": {
+                "Forward Bias Characteristics": {
+                    "Circuit Setup": [
+                        "Connect the positive terminal of the DC power supply to the anode (P-type) of the diode.",
+                        "Connect the cathode (N-type) of the diode to one end of a resistor.",
+                        "Connect the other end of the resistor back to the negative terminal of the power supply."
+                    ],
+                    "Measurement": [
+                        "Gradually increase the voltage from 0V and measure the current through the diode using an ammeter in series with the circuit.",
+                        "Record the voltage across the diode and the corresponding current for each step (e.g., every 0.5V increment)."
+                    ],
+                    "Observation": [
+                        "Note that initially, there is little to no current until the forward voltage exceeds the threshold (typically around 0.7V for silicon diodes).",
+                        "Beyond this point, the current increases rapidly with a small increase in voltage."
+                    ]
+                },
+                "Reverse Bias Characteristics": {
+                    "Circuit Setup": [
+                        "Connect the positive terminal of the DC power supply to the cathode (N-type) of the diode.",
+                        "Connect the anode (P-type) of the diode to one end of a resistor.",
+                        "Connect the other end of the resistor back to the negative terminal of the power supply."
+                    ],
+                    "Measurement": [
+                        "Gradually increase the reverse voltage and measure the current through the diode using an ammeter in series with the circuit.",
+                        "Record the voltage across the diode and the corresponding current for each step (e.g., every 1V increment)."
+                    ],
+                    "Observation": [
+                        "Note that a very small leakage current flows until the reverse breakdown voltage is reached, at which point the current increases sharply."
+                    ]
+                },
+                "Safety Procedures": [
+                    "Power Off Before Adjustments: Always turn off or disconnect the power supply before making any changes to the circuit.",
+                    "Use Appropriate Resistors: Ensure resistors are of adequate value to prevent excessive current that could damage the diode.",
+                    "Avoid Overheating: Monitor the diode for signs of overheating, which can indicate excessive current flow.",
+                    "Handle Components Carefully: Be gentle with semiconductor devices as they can be sensitive to static discharge."
+                ]
+            }
+        },
+        {
+            "title": "To analyze voltage regulation using a Zener diode.",
+            "objective": "To conduct an experiment analyzing voltage regulation using a Zener diode, you will need the following materials and follow these steps:",
+            "materials": {
+                "Experiment Materials": [
+                    "**Zener Diode**: Choose one with a known breakdown voltage (Vz).",
+                    "**Power Supply**: Adjustable DC power supply.",
+                    "**Resistors**:\n   - Series Resistor (Rs): To limit current through the Zener diode.\n   - Load Resistor (Rl): To simulate load conditions.",
+                    "**Multimeter/Voltmeter**: For measuring voltage across components.",
+                    "**Ammeter**: For measuring current through the circuit.",
+                    "**Breadboard and Connecting Wires**: For assembling the circuit.",
+                    "**Rheostat** (optional): To vary the input voltage."
+                ]
+            },
+            "procedure": {
+                "Experiment Steps": [
+                    "1. **Circuit Assembly**:\n   - Connect the Zener diode in reverse bias across the load resistor (Rl).\n   - Place the series resistor (Rs) between the power supply and the anode of the Zener diode.\n   - Ensure all connections are secure on the breadboard.",
+                    "2. **Initial Setup**:\n   - Set the power supply to a voltage slightly above the Zener breakdown voltage.\n   - Measure and record the initial input voltage (Vin) and output voltage (Vout across Rl).",
+                    "3. **Data Collection**:\n   - Gradually increase the input voltage using the rheostat or by adjusting the power supply.\n   - At each step, measure and record the input voltage (Vin), output voltage (Vout), and current through the Zener diode.\n   - Note how Vout remains relatively constant as Vin increases beyond the breakdown voltage.",
+                    "4. **Load Variation**:\n   - Change the load resistor value to simulate different load conditions.\n   - Repeat the measurements for each load condition to observe changes in regulation performance.",
+                    "5. **Graphical Analysis**:\n   - Plot graphs of input voltage (Vin) vs. output voltage (Vout) and input current vs. Zener current.\n   - Analyze how well the Zener diode maintains a constant Vout as Vin varies."
+                ],
+                "Safety Procedures": [
+                    "- **Power Off Before Assembly**: Ensure the power supply is off before connecting or disconnecting components to prevent electric shock or damage.",
+                    "- **Current Limitation**: Use an appropriate series resistor (Rs) to limit current through the Zener diode, preventing overheating and potential damage.",
+                    "- **Component Ratings**: Verify that all components are rated for the voltages and currents used in the experiment.",
+                    "- **Personal Protective Equipment**: Wear safety goggles and avoid loose clothing when working with electrical circuits."
+                ]
+            }
+        },
+        {
+            "title": "To construct and analyze the performance of half-wave and full-wave rectifiers, both with and without filters.",
+            "objective": "",
+            "materials": {
+                "Experiment Materials": [
+                    "### Experiment Materials",
+                    "",
+                    "#### Required Components:",
+                    "1. **Multisim Software**: For simulation purposes.",
+                    "2. **Jumper Wires**: To connect components on a breadboard.",
+                    "3. **PN Junction Rectifier Diodes (e.g., 1N4001)**: Essential for rectification.",
+                    "4. **Resistors**: Various values, including a 10 k\u03a9 resistor.",
+                    "5. **Capacitors**: Values of 0.1 \u00b5F, 1 \u00b5F, and 10 \u00b5F for filtering purposes.",
+                    "6. **AC Power Supply**: To provide the input signal.",
+                    "7. **Breadboard**: For constructing circuits physically.",
+                    "8. **Oscilloscope or Multimeter**: To measure output voltage."
+                ]
+            },
+            "procedure": {
+                "Experiment Steps": [
+                    "### Experiment Steps",
+                    "",
+                    "#### Half-Wave Rectifier",
+                    "",
+                    "1. **Simulation**:",
+                    "   - Open Multisim and create a new project.",
+                    "   - Place components: AC source, 1N4001 diode, resistor (10 k\u03a9), and load resistor.",
+                    "   - Connect the circuit to form a half-wave rectifier.",
+                    "   - Run the simulation and observe the output waveform.",
+                    "",
+                    "2. **Construction**:",
+                    "   - Set up the breadboard with an AC power supply, diode, resistors, and jumper wires.",
+                    "   - Connect the components as per the simulated design.",
+                    "   - Measure the output voltage using an oscilloscope or multimeter to verify rectification.",
+                    "",
+                    "3. **Analysis Without Filter**:",
+                    "   - Observe the pulsating DC output on the oscilloscope.",
+                    "   - Record peak voltage and ripple characteristics.",
+                    "",
+                    "4. **Adding a Filter**:",
+                    "   - Connect a capacitor (e.g., 10 \u00b5F) across the load resistor.",
+                    "   - Re-measure the output to observe reduced ripple.",
+                    "",
+                    "#### Full-Wave Rectifier",
+                    "",
+                    "1. **Simulation**:",
+                    "   - In Multisim, create a full-wave rectifier using two diodes and a center-tapped transformer or four diodes in a bridge configuration.",
+                    "   - Run the simulation and analyze the output waveform.",
+                    "",
+                    "2. **Construction**:",
+                    "   - Assemble the circuit on a breadboard with an AC source, diodes, resistors, and jumper wires.",
+                    "   - Verify connections and measure the output voltage.",
+                    "",
+                    "3. **Analysis Without Filter**:",
+                    "   - Observe the full-wave rectified output on the oscilloscope.",
+                    "   - Note the frequency doubling effect compared to half-wave rectification.",
+                    "",
+                    "4. **Adding a Filter**:",
+                    "   - Insert a capacitor across the load resistor.",
+                    "   - Measure and record improvements in ripple reduction."
+                ],
+                "Safety Procedures": [
+                    "### Safety Procedures",
+                    "",
+                    "1. **Power Off**: Always ensure the power supply is off before making or changing connections.",
+                    "2. **Component Ratings**: Use components within their rated voltage and current specifications to prevent damage.",
+                    "3. **Proper Handling**: Handle diodes and capacitors carefully, as they can be sensitive to static discharge.",
+                    "4. **Breadboard Connections**: Double-check all connections on the breadboard to avoid short circuits.",
+                    "5. **Use of Equipment**: Operate oscilloscopes and multimeters according to manufacturer guidelines."
+                ]
+            }
+        },
+        {
+            "title": "To analyze and implement wave-shaping circuits using diodes for clipping and clamping applications.",
+            "objective": "",
+            "materials": {
+                "Required Components": [
+                    "Diodes: 1N4148 or similar for clipping and clamping circuits.",
+                    "Resistors: Various values (e.g., 1k\u03a9, 10k\u03a9) depending on the circuit design.",
+                    "Capacitors: For clamping applications (e.g., 0.1\u00b5F, 10\u00b5F).",
+                    "Power Supply: Adjustable DC power supply or batteries.",
+                    "Function Generator: To provide input AC signal for testing.",
+                    "Oscilloscope: To observe and analyze waveforms.",
+                    "Breadboard/PCB: For assembling the circuit.",
+                    "Connecting Wires: For making connections."
+                ]
+            },
+            "procedure": {
+                "Clipping Circuit": {
+                    "Setup": [
+                        "Connect a diode in series with a resistor across the input signal path on the breadboard.",
+                        "Ensure the anode of the diode is connected to the positive side for positive clipping or the negative side for negative clipping."
+                    ],
+                    "Operation": [
+                        "Apply an AC signal from the function generator to the circuit.",
+                        "Observe the output waveform using the oscilloscope."
+                    ],
+                    "Analysis": [
+                        "Note how the peaks of the waveform are clipped at a certain voltage level, determined by the diode's forward voltage drop and resistor value."
+                    ]
+                },
+                "Clamping Circuit": {
+                    "Setup": [
+                        "Connect a diode in parallel with the load (resistor) on the breadboard.",
+                        "Place a capacitor in series with the input signal path."
+                    ],
+                    "Operation": [
+                        "Apply an AC signal from the function generator to the circuit.",
+                        "Observe the output waveform using the oscilloscope."
+                    ],
+                    "Analysis": [
+                        "Note how the entire waveform is shifted up or down, depending on the orientation of the diode and initial capacitor voltage."
+                    ]
+                },
+                "Safety Procedures": {
+                    "Power Handling": [
+                        "Ensure that all components are rated for the voltages used in the experiment.",
+                        "Do not exceed the power supply's maximum output rating."
+                    ],
+                    "Component Orientation": [
+                        "Double-check the polarity of diodes and capacitors to prevent damage."
+                    ],
+                    "Handling Equipment": [
+                        "Use insulated tools when working with live circuits.",
+                        "Be cautious while connecting/disconnecting components from the breadboard."
+                    ],
+                    "General Safety": [
+                        "Keep the workspace tidy to avoid short circuits.",
+                        "Wear safety goggles if there's a risk of component failure or explosion."
+                    ]
+                }
+            }
+        },
+        {
+            "title": "To analyze the input and output characteristics of Bipolar Junction Transistors (BJTs) and Field-Effect Transistors (FETs).",
+            "objective": "To analyze the input and output characteristics of Bipolar Junction Transistors (BJTs) and Field-Effect Transistors (FETs), you will need specific materials, equipment, and a detailed procedure. Below is an organized guide to help you conduct this experiment effectively.",
+            "materials": {
+                "For BJTs": [
+                    "Transistor: NPN or PNP BJT",
+                    "Power Supply: Variable DC power supply for biasing",
+                    "Multimeter: To measure voltage and current",
+                    "Breadboard and Connecting Wires",
+                    "Resistors: Various values for biasing circuits",
+                    "Oscilloscope (optional): For visualizing waveforms",
+                    "Signal Generator (optional): To provide input signals"
+                ],
+                "For FETs": [
+                    "Transistor: N-channel or P-channel MOSFET",
+                    "Power Supply: Variable DC power supply for biasing",
+                    "Multimeter",
+                    "Breadboard and Connecting Wires",
+                    "Resistors: Various values for gate-source and drain-source circuits",
+                    "Oscilloscope (optional)",
+                    "Signal Generator (optional)"
+                ]
+            },
+            "procedure": {
+                "For BJTs": [
+                    "Setup the Circuit:\n   - Connect the BJT in a common-emitter configuration on the breadboard.\n   - Use resistors to set up the base biasing circuit.",
+                    "Measure Input Characteristics:\n   - Vary the base current (I_B) using the power supply while keeping the collector-emitter voltage (V_CE) constant.\n   - Measure and record the corresponding collector current (I_C).\n   - Plot I_C vs. I_B to obtain the input characteristics.",
+                    "Measure Output Characteristics:\n   - Keep the base current (I_B) constant and vary V_CE.\n   - Record the corresponding I_C for each value of V_CE.\n   - Plot I_C vs. V_CE to obtain the output characteristics.",
+                    "Determine Q-Point:\n   - Identify the operating point on the load line drawn in the output characteristic graph."
+                ],
+                "For FETs": [
+                    "Setup the Circuit:\n   - Connect the MOSFET in a common-source configuration.\n   - Use resistors to set up the gate-source biasing circuit.",
+                    "Measure Input Characteristics:\n   - Vary the gate-source voltage (V_GS) while keeping the drain-source voltage (V_DS) constant.\n   - Measure and record the corresponding drain current (I_D).\n   - Plot I_D vs. V_GS to obtain the input characteristics.",
+                    "Measure Output Characteristics:\n   - Keep the gate-source voltage (V_GS) constant and vary V_DS.\n   - Record the corresponding I_D for each value of V_DS.\n   - Plot I_D vs. V_DS to obtain the output characteristics.",
+                    "Determine Operating Point:\n   - Identify the operating point on the load line drawn in the output characteristic graph."
+                ]
+            }
+        },
+        {
+            "title": "To design a common emitter amplifier and analyze its frequency response.",
+            "objective": "To design a common emitter amplifier and analyze its frequency response, you'll need specific materials and follow a detailed procedure. Here's a comprehensive guide:",
+            "materials": [
+                {
+                    "item": "Transistor",
+                    "description": "NPN type (e.g., BC547 or 2N2222)"
+                },
+                {
+                    "item": "Resistors",
+                    "details": [
+                        "Biasing resistors: R1, R2 for voltage divider",
+                        "Collector resistor: RC",
+                        "Emitter resistor: RE (with bypass capacitor if needed)"
+                    ]
+                },
+                {
+                    "item": "Capacitors",
+                    "details": [
+                        "Coupling capacitors: Cin, Cout",
+                        "Bypass capacitor: CE (optional, for AC gain improvement)"
+                    ]
+                },
+                {
+                    "item": "Power Supply",
+                    "description": "DC voltage source (e.g., 12V or 9V battery)"
+                },
+                {
+                    "item": "Signal Generator",
+                    "description": "To provide input signal"
+                },
+                {
+                    "item": "Oscilloscope",
+                    "description": "For observing output waveform and frequency response"
+                },
+                {
+                    "item": "Multimeter",
+                    "description": "For measuring voltages and resistances"
+                },
+                {
+                    "item": "Breadboard or PCB",
+                    "description": "For assembling the circuit"
+                },
+                {
+                    "item": "Connecting Wires",
+                    "description": ""
+                }
+            ],
+            "procedure": [
+                {
+                    "step": "Circuit Design",
+                    "details": [
+                        "Use a voltage divider network with R1 and R2 to bias the base of the transistor.",
+                        "Connect RC between the collector and the positive supply voltage.",
+                        "Place RE between the emitter and ground. Optionally, connect a bypass capacitor CE in parallel with RE for AC signals."
+                    ]
+                },
+                {
+                    "step": "Assembly",
+                    "details": [
+                        "Assemble the circuit on a breadboard or PCB following the design.",
+                        "Ensure all connections are secure and components are correctly oriented (e.g., transistor pinout)."
+                    ]
+                },
+                {
+                    "step": "Initial Testing",
+                    "details": [
+                        "Power up the circuit with the DC supply.",
+                        "Use a multimeter to verify biasing voltages at the base, collector, and emitter."
+                    ]
+                },
+                {
+                    "step": "Signal Input",
+                    "details": [
+                        "Connect the signal generator to the input coupling capacitor Cin.",
+                        "Set an appropriate frequency range for testing (e.g., 20 Hz to 20 kHz)."
+                    ]
+                },
+                {
+                    "step": "Observation",
+                    "details": [
+                        "Use the oscilloscope to observe the input and output waveforms.",
+                        "Adjust the gain by changing RC or RE values if necessary."
+                    ]
+                },
+                {
+                    "step": "Frequency Response Analysis",
+                    "details": [
+                        "Sweep the signal generator frequency from low to high.",
+                        "Record the amplitude of the output at various frequencies using the oscilloscope.",
+                        "Plot the frequency response curve (gain vs. frequency)."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "To implement and analyze operational amplifier (Op-Amp) circuits: inverting, non-inverting, summing, and differentiator configurations.",
+            "objective": "To implement and analyze operational amplifier (Op-Amp) circuits, including inverting, non-inverting, summing, and differentiator configurations, you will need the following materials and follow these procedures:",
+            "materials": {
+                "equipment": [
+                    "Operational Amplifier (Op-Amp): A commonly used model is the LM741.",
+                    "Power Supply: \u00b115V DC power supply for the Op-Amp.",
+                    "Breadboard or PCB: For assembling the circuit.",
+                    "Connecting Wires: To connect components on the breadboard.",
+                    "Multimeter/Voltmeter: For measuring voltages and currents.",
+                    "Function Generator: To provide input signals (AC or DC).",
+                    "Oscilloscope: To observe waveforms at different points in the circuit."
+                ],
+                "components": [
+                    "Resistors: Various values for setting gain and feedback, typically ranging from 1k\u03a9 to 100k\u03a9.",
+                    "Capacitors: For the differentiator configuration, typically in the range of 0.01\u00b5F to 1\u00b5F.",
+                    "Bypass Capacitors (optional): To stabilize the power supply."
+                ]
+            },
+            "procedure": {
+                "inverting_amplifier": {
+                    "circuit_setup": [
+                        "Connect the non-inverting input (+) to ground.",
+                        "Connect an input resistor R_in between the input signal and the inverting input (-).",
+                        "Connect a feedback resistor R_f from the output to the inverting input (-)."
+                    ],
+                    "operation": [
+                        "Apply an AC or DC signal at the input.",
+                        "Measure the output voltage using a multimeter or oscilloscope."
+                    ],
+                    "analysis": "Calculate the gain as V_out = -(R_f/R_in) \u00d7 V_in."
+                },
+                "non_inverting_amplifier": {
+                    "circuit_setup": [
+                        "Connect the inverting input (-) to a voltage divider formed by two resistors R_1 and R_2.",
+                        "Connect one end of R_1 to ground and the other end to the junction between R_1 and R_2, which is also connected to the inverting input (-).",
+                        "Apply the input signal to the non-inverting input (+)."
+                    ],
+                    "operation": [
+                        "Apply an AC or DC signal at the input.",
+                        "Measure the output voltage."
+                    ],
+                    "analysis": "Calculate the gain as V_out = (1 + R_2/R_1) \u00d7 V_in."
+                },
+                "summing_amplifier": {
+                    "circuit_setup": [
+                        "Connect multiple input resistors (R_in1, R_in2, ...) to the inverting input (-).",
+                        "Connect each input signal to one end of these resistors.",
+                        "Use a feedback resistor R_f from the output to the inverting input (-)."
+                    ],
+                    "operation": [
+                        "Apply different signals at each input.",
+                        "Measure the output voltage."
+                    ],
+                    "analysis": "The output is given by V_out = -(R_f/R_in1 \u00d7 V_in1 + R_f/R_in2 \u00d7 V_in2 + ...)."
+                },
+                "differentiator": {
+                    "circuit_setup": [
+                        "Connect a capacitor C in series with the input signal to the inverting input (-).",
+                        "Connect an input resistor R from the junction of the capacitor and inverting input to ground.",
+                        "Use a feedback resistor R_f from the output to the inverting input (-)."
+                    ],
+                    "operation": [
+                        "Apply a time-varying signal at the input.",
+                        "Measure the output voltage."
+                    ],
+                    "analysis": "The output is proportional to the derivative of the input, given by V_out = -R_f C dV_in/dt."
+                }
+            }
+        },
+        {
+            "title": "To verify the operation of basic logic gates: AND, OR, NOT, NAND, NOR, XOR, and XNOR",
+            "objective": "To verify the operation of basic logic gates such as AND, OR, NOT, NAND, NOR, XOR, and XNOR, you will need specific materials and follow a structured procedure. Below is a detailed guide:",
+            "materials": {
+                "Integrated Circuits (ICs)": [
+                    "7408 IC for AND gates",
+                    "7432 IC for OR gates",
+                    "7404 IC for NOT gates",
+                    "7400 IC for NAND gates",
+                    "7402 IC for NOR gates",
+                    "7486 IC for XOR and XNOR gates"
+                ],
+                "Breadboard": "For assembling the circuits.",
+                "Jumper Wires": "To connect components on the breadboard.",
+                "Power Supply": "Typically, a 5V DC power supply is used for these ICs.",
+                "Logic Probe or Multimeter": "To verify output logic levels.",
+                "Switches or Push Buttons": "For input signals.",
+                "LEDs (Optional)": "To visually indicate the output states.",
+                "Resistors": "Typically 330\u03a9 to limit current through LEDs."
+            },
+            "procedure": {
+                "Setup": [
+                    "Connect the power supply to the breadboard, ensuring a common ground.",
+                    "Insert the ICs into the breadboard according to their pin configurations."
+                ],
+                "AND Gate Verification": [
+                    "Connect inputs A and B to the 7408 IC.",
+                    "Use switches or buttons for input signals.",
+                    "Verify output using a logic probe or multimeter; it should be high only when both inputs are high."
+                ],
+                "OR Gate Verification": [
+                    "Connect inputs A and B to the 7432 IC.",
+                    "Check that the output is high if at least one input is high."
+                ],
+                "NOT Gate Verification": [
+                    "Connect a single input to the 7404 IC.",
+                    "The output should be the inverse of the input."
+                ],
+                "NAND Gate Verification": [
+                    "Connect inputs A and B to the 7400 IC.",
+                    "Output should be low only when both inputs are high."
+                ],
+                "NOR Gate Verification": [
+                    "Connect inputs A and B to the 7402 IC.",
+                    "Output should be high only when both inputs are low."
+                ],
+                "XOR Gate Verification": [
+                    "Connect inputs A and B to the 7486 IC (first section).",
+                    "Output is high only when inputs differ."
+                ],
+                "XNOR Gate Verification": [
+                    "Use the second section of the 7486 IC.",
+                    "Output is high only when inputs are the same."
+                ],
+                "Truth Table Testing": [
+                    "For each gate, test all possible input combinations (00, 01, 10, 11) and record outputs to verify against expected truth tables."
+                ]
+            }
+        },
+        {
+            "title": "To investigate the charging and discharging behavior of a capacitor in an RC circuit and understand the time constant.",
+            "objective": "To investigate the charging and discharging behavior of a capacitor in an RC (resistor-capacitor) circuit and understand the time constant, you will need specific materials and follow a detailed procedure. Here's how to set up and conduct this experiment:",
+            "materials": [
+                "Resistors: Various resistances for experimentation.",
+                "Capacitors: Different capacitance values.",
+                "DC Power Supply/Battery: To provide the necessary voltage for charging the capacitor.",
+                "Switch: A double-pole switch to alternate between charging and discharging modes.",
+                "Digital Multimeter (DMM): For measuring voltages across components.",
+                "Oscilloscope (optional): For visualizing voltage changes over time.",
+                "Wires and Breadboard: For circuit assembly.",
+                "Stopwatch or Timer App: To measure time intervals accurately."
+            ],
+            "procedure": [
+                {
+                    "step": "Circuit Assembly",
+                    "details": "- Connect the resistor and capacitor in series on a breadboard.\n- Attach one end of this series to the positive terminal of the DC power supply.\n- Connect the other end back to the negative terminal, completing the circuit.\n- Insert the switch between the capacitor and the negative terminal of the power supply."
+                },
+                {
+                    "step": "Charging Process",
+                    "details": "- Set the switch to position 'a' (charging mode).\n- Turn on the power supply to start charging the capacitor.\n- Use the multimeter or oscilloscope to measure the voltage across the capacitor at regular intervals.\n- Record the time and corresponding voltage values until the capacitor is fully charged."
+                },
+                {
+                    "step": "Discharging Process",
+                    "details": "- Move the switch to position 'b' (discharging mode), disconnecting the power supply.\n- Immediately start measuring the voltage across the capacitor again at regular intervals.\n- Continue recording the voltage as it decreases over time until it reaches zero or near-zero."
+                },
+                {
+                    "step": "Data Analysis",
+                    "details": "- Plot the recorded voltage vs. time data for both charging and discharging processes on a graph.\n- Determine the time constant (\\(\\tau\\)) of the circuit using the formula \\(\\tau = R \\times C\\), where \\(R\\) is resistance and \\(C\\) is capacitance.\n- Compare experimental time constants with theoretical values."
+                },
+                {
+                    "step": "Safety Procedures",
+                    "details": "- Power Off First: Always disconnect the power supply before making changes to the circuit.\n- Component Ratings: Ensure that all components are rated for the voltage you will be using.\n- Avoid Short Circuits: Double-check connections to prevent short circuits, which can damage components or cause injury.\n- Handle with Care: Be cautious when handling capacitors as they can store charge even after being disconnected from a power source."
+                }
+            ]
+        },
+        {
+            "title": "To investigate the resonance behavior of an LC circuit and measure the resonant frequency.",
+            "objective": "To investigate the resonance behavior of an LC circuit and measure its resonant frequency, you will need specific materials and follow a detailed procedure. Here's how you can set up and conduct this experiment:",
+            "materials": [
+                "**Inductor (L):** Choose an inductor with known inductance.",
+                "**Capacitor (C):** Select a capacitor with known capacitance.",
+                "**Function Generator:** To provide variable frequency AC signals.",
+                "**Oscilloscope:** For observing voltage and current waveforms.",
+                "**Multimeter:** For measuring resistance, if needed.",
+                "**Connecting Wires:** To connect components together.",
+                "**Breadboard or Circuit Board:** For assembling the circuit.",
+                "**Variable Resistor (Optional):** If you want to explore different Q factors."
+            ],
+            "procedure": [
+                "1. **Circuit Assembly:**\n   - Connect the inductor and capacitor in series on a breadboard or circuit board.\n   - Attach one end of the LC combination to the output terminals of the function generator.\n   - Connect the other end to an oscilloscope probe for voltage measurement across the LC components.",
+                "2. **Initial Setup:**\n   - Set the function generator to produce a sine wave signal.\n   - Start with a low frequency and gradually increase it.\n   - Ensure all connections are secure and there is no short circuit.",
+                "3. **Observation of Resonance:**\n   - Slowly vary the frequency of the function generator while observing the voltage across the LC components on the oscilloscope.\n   - Note the frequency at which the amplitude of the voltage reaches its maximum; this is the resonant frequency (\\(f_0\\)).",
+                "4. **Measurement and Calculation:**\n   - Use the formula for resonant frequency \\( f_0 = \\frac{1}{2\\pi\\sqrt{LC}} \\) to calculate the theoretical resonant frequency.\n   - Compare your observed resonant frequency with the calculated value to verify accuracy.",
+                "5. **Waveform Analysis:**\n   - Observe and record the voltage and current waveforms at resonance.\n   - Note that at resonance, the impedance is minimized, and the circuit behaves like a purely resistive one (if resistance is negligible).",
+                "6. **Repeat with Different Components (Optional):**\n   - Change either the inductor or capacitor to observe how it affects the resonant frequency.\n   - Optionally, introduce a variable resistor to study the effect of damping on resonance.",
+                "### Safety Procedures\n\n- **Electrical Safety:** Ensure all equipment is properly grounded and avoid touching live circuits.\n- **Component Ratings:** Use components within their specified voltage and current ratings to prevent damage or hazards.\n- **Equipment Handling:** Handle the oscilloscope probes with care, ensuring they are connected correctly to avoid short circuits."
+            ]
+        },
+        {
+            "title": "To calibrate an oscilloscope for accurate measurements of voltage and time.",
+            "objective": "To calibrate an oscilloscope for accurate measurements of voltage and time, you will need specific materials and follow a detailed procedure. Here's how to proceed:",
+            "materials": [
+                "1. **Oscilloscope**: The primary device being calibrated.",
+                "2. **Signal Generator**: Provides known reference signals for calibration.",
+                "3. **Coaxial Cables**: High-quality cables for connecting the signal generator to the oscilloscope.",
+                "4. **Calibration Reference Source**: A precision voltage source or a function generator with known accuracy.",
+                "5. **Multimeter**: For verifying voltage levels if necessary.",
+                "6. **User Manual**: Specific instructions and settings for your oscilloscope model."
+            ],
+            "procedure": [
+                "1. **Preparation**:",
+                "   - Ensure the oscilloscope is powered off before connecting any cables to prevent damage.",
+                "   - Set up a stable work environment with minimal electrical interference.",
+                "",
+                "2. **Connect Equipment**:",
+                "   - Connect the signal generator to the oscilloscope using high-quality coaxial cables.",
+                "   - Power on both devices and allow them to warm up for at least 15-30 minutes to stabilize their internal components.",
+                "",
+                "3. **Set Measurement Range**:",
+                "   - On the oscilloscope, select a voltage range that matches or slightly exceeds the expected output from your signal generator.",
+                "   - Adjust the time base (horizontal scale) to appropriately display the waveform of interest.",
+                "",
+                "4. **Generate Reference Signal**:",
+                "   - Use the signal generator to produce a sine wave at a known frequency and amplitude. Commonly used frequencies for calibration are 1 kHz or 10 kHz, with amplitudes like 1 V peak-to-peak.",
+                "",
+                "5. **Adjust Oscilloscope Settings**:",
+                "   - On the oscilloscope, adjust the vertical scale (volts/division) to fit the waveform within the screen.",
+                "   - Adjust the horizontal scale (time/division) so that at least one or two complete cycles of the waveform are visible.",
+                "",
+                "6. **Calibration Process**:",
+                "   - Compare the displayed amplitude and frequency on the oscilloscope with the known values from the signal generator.",
+                "   - Use the oscilloscope\u2019s calibration settings to adjust the vertical gain (voltage per division) until the displayed amplitude matches the reference value.",
+                "   - Adjust the time base if necessary to ensure accurate time measurements.",
+                "",
+                "7. **Verification**:",
+                "   - Verify the calibration by measuring another known signal and comparing it with expected values.",
+                "   - Use a multimeter, if available, to cross-check voltage levels for additional accuracy assurance.",
+                "",
+                "8. **Documentation**:",
+                "   - Record all settings and adjustments made during the calibration process for future reference.",
+                "   - Note any discrepancies or issues encountered during calibration."
+            ]
+        },
+        {
+            "title": "To determine the turns ratio of a transformer and verify the relationship between the primary and secondary voltages.",
+            "objective": "To determine the turns ratio of a transformer and verify the relationship between primary and secondary voltages, you'll need to follow these steps with the appropriate materials. Here's a detailed guide:",
+            "materials": [
+                "**Transformer**: The device under test.",
+                "**AC Voltage Source**: To supply voltage to the primary winding.",
+                "**Voltmeter or Multimeter**: For measuring voltages across the windings.",
+                "**Ammeter** (optional): If you need to measure current for additional analysis.",
+                "**Insulated Test Leads**: For connecting instruments safely.",
+                "**Personal Protective Equipment (PPE)**: Safety goggles, gloves, and lab coat."
+            ],
+            "procedure": [
+                "### Experiment Steps",
+                "",
+                "1. **Preparation and Safety**",
+                "   - Ensure the transformer is de-energized before starting the test.",
+                "   - Properly ground the transformer to prevent electrical hazards.",
+                "   - Confirm that all safety protocols are in place.",
+                "",
+                "2. **Setup**",
+                "   - Connect the AC voltage source to the primary winding of the transformer.",
+                "   - Attach one voltmeter across the primary winding and another across the secondary winding using insulated test leads.",
+                "",
+                "3. **Measurement**",
+                "   - Apply a known low-voltage AC signal (e.g., 10V) to the primary winding.",
+                "   - Measure and record the voltage across both the primary (\\( V_p \\)) and secondary (\\( V_s \\)) windings.",
+                "",
+                "4. **Calculation of Turns Ratio**",
+                "   - Calculate the turns ratio using the formula:",
+                "     \\[",
+                "     \\text{Turns Ratio (n)} = \\frac{V_p}{V_s}",
+                "     \\]",
+                "   - Compare this calculated value with the transformer's specified turns ratio, if available.",
+                "",
+                "5. **Verification**",
+                "   - Verify that the relationship \\( V_p/V_s = N_p/N_s \\) holds true, where \\( N_p \\) and \\( N_s \\) are the number of turns in the primary and secondary windings, respectively.",
+                "   - If possible, measure the actual number of turns using a turn counter to further verify the calculated ratio.",
+                "",
+                "### Safety Procedures",
+                "",
+                "- **De-energize Equipment**: Always ensure that the transformer is de-energized before connecting or disconnecting any equipment.",
+                "- **Use Insulated Tools**: Use insulated tools and test leads to prevent accidental electric shocks.",
+                "- **Wear PPE**: Wear appropriate personal protective equipment, including safety goggles and gloves.",
+                "- **Follow Lab Protocols**: Adhere strictly to laboratory safety protocols and guidelines."
+            ]
+        },
+        {
+            "title": "To construct and analyze a bridge rectifier circuit and compare its performance with a half-wave rectifier.",
+            "objective": "To construct and analyze a bridge rectifier circuit and compare its performance with a half-wave rectifier, you will need the following materials and follow these steps:",
+            "materials": {
+                "Bridge Rectifier Circuit": [
+                    "Diodes: Four diodes (e.g., 1N4007 or 1N5408).",
+                    "Resistors: Load resistor (e.g., 1k\u03a9) to measure output voltage.",
+                    "Capacitor (optional): For smoothing the DC output, a capacitor like 100\u00b5F can be used.",
+                    "AC Power Supply: A variable AC power supply or function generator.",
+                    "DC Power Supply: To provide biasing if needed.",
+                    "Breadboard and Connecting Wires: For assembling the circuit.",
+                    "Multimeter/Voltmeter: To measure voltage across components.",
+                    "Oscilloscope (optional): To visualize waveforms."
+                ],
+                "Half-Wave Rectifier Circuit": [
+                    "Diode: One diode (e.g., 1N4007 or 1N5408).",
+                    "Resistors and Capacitors: Same as above for load and smoothing.",
+                    "AC Power Supply: As above.",
+                    "Breadboard, Wires, Multimeter/Voltmeter, Oscilloscope."
+                ]
+            },
+            "procedure": {
+                "Bridge Rectifier Circuit": [
+                    "Assemble the Circuit:",
+                    "- Connect four diodes in a bridge configuration on the breadboard:\n  - Diode D1 between AC input positive and center node.\n  - Diode D2 between AC input negative and center node.\n  - Diode D3 between center node and load resistor (positive side).\n  - Diode D4 between load resistor (negative side) and center node.",
+                    "- Connect the AC power supply across the two opposite corners of the bridge.",
+                    "Measure Output:",
+                    "- Use a multimeter to measure the DC output voltage across the load resistor.",
+                    "- Optionally, connect an oscilloscope across the load to observe the waveform.",
+                    "Analyze Performance:",
+                    "- Note the peak and average DC output voltages.",
+                    "- Observe the ripple factor if using a capacitor for smoothing."
+                ],
+                "Half-Wave Rectifier Circuit": [
+                    "Assemble the Circuit:",
+                    "- Connect one diode with its anode to the AC input positive terminal and cathode to one side of the load resistor.",
+                    "- Connect the other side of the load resistor back to the AC input negative terminal.",
+                    "Measure Output:",
+                    "- Use a multimeter to measure the DC output voltage across the load resistor.",
+                    "- Optionally, use an oscilloscope to observe the waveform.",
+                    "Analyze Performance:",
+                    "- Note the peak and average DC output voltages.",
+                    "- Observe the ripple factor if using a capacitor for smoothing."
+                ]
+            }
+        },
+        {
+            "title": "To study the frequency response of a low-pass filter and determine its cutoff frequency.",
+            "objective": "To study the frequency response of a low-pass filter and determine its cutoff frequency, you will need specific materials and follow a detailed procedure. Here's how to conduct this experiment:",
+            "materials": {
+                "required_components": [
+                    "Resistor (R): Typically in the range of 1 k\u03a9 to 10 k\u03a9.",
+                    "Capacitor (C): Typically in the range of 0.01 \u00b5F to 1 \u00b5F.",
+                    "Function Generator: To provide a variable frequency input signal.",
+                    "Oscilloscope or Multimeter with Frequency Response Analysis Capability: To measure output voltage and phase shift.",
+                    "Breadboard or Protoboard: For assembling the circuit.",
+                    "Connecting Wires: For making connections between components."
+                ],
+                "equipment": [
+                    "Power Supply (if needed): Depending on your function generator's requirements.",
+                    "Computer with Data Acquisition Software: If using software for frequency response analysis."
+                ]
+            },
+            "procedure": {
+                "steps": [
+                    {
+                        "step_number": 1,
+                        "title": "Circuit Assembly",
+                        "description": "Assemble the low-pass filter circuit on a breadboard or protoboard. Connect the resistor and capacitor in series, with the input signal applied across the combination and output taken across the capacitor."
+                    },
+                    {
+                        "step_number": 2,
+                        "title": "Initial Setup",
+                        "description": "Set up your function generator to provide a sinusoidal waveform at a starting frequency (e.g., 10 Hz). Connect the oscilloscope or multimeter to measure the output voltage across the capacitor."
+                    },
+                    {
+                        "step_number": 3,
+                        "title": "Frequency Sweep",
+                        "description": "Gradually increase the frequency of the input signal from low frequencies upwards. At each frequency, record the amplitude and phase shift of the output signal relative to the input."
+                    },
+                    {
+                        "step_number": 4,
+                        "title": "Data Collection",
+                        "description": "Continue increasing the frequency until you observe a significant drop in output voltage (typically 3 dB below the maximum value). Record the frequency at which this occurs; this is your cutoff frequency (f_c)."
+                    },
+                    {
+                        "step_number": 5,
+                        "title": "Analysis",
+                        "description": "Plot the amplitude response (output voltage vs. input frequency) on a logarithmic scale. Identify the cutoff frequency from the plot where the output drops to 70.7% of its maximum value."
+                    },
+                    {
+                        "step_number": 6,
+                        "title": "Verification",
+                        "description": "Calculate the theoretical cutoff frequency using f_c = \\frac{1}{2\\pi RC}. Compare this with your measured cutoff frequency to verify accuracy."
+                    }
+                ],
+                "safety_procedures": [
+                    "Electrical Safety: Ensure all connections are secure and avoid touching live circuits.",
+                    "Equipment Handling: Use appropriate settings on the function generator to prevent damage to components due to excessive voltage or current.",
+                    "Data Recording: Double-check measurements for consistency and accuracy."
+                ]
+            }
+        },
+        {
+            "title": "To measure the input and output impedances of an operational amplifier (Op-Amp) in a given configuration.",
+            "objective": "To measure the input and output impedances of an operational amplifier (Op-Amp) in a given configuration, you will need specific materials and follow a detailed procedure. Here's how to conduct this experiment:",
+            "materials": [
+                "Operational Amplifier: Choose an Op-Amp suitable for your application.",
+                "Power Supply: A dual power supply (+Vcc and -Vee) appropriate for the Op-Amp.",
+                "Function Generator: To provide input signals of varying frequencies.",
+                "Oscilloscope or Multimeter: For measuring voltages and currents.",
+                "Resistors: Various values, including a high-value resistor (e.g., 1 M\u03a9) for loading purposes.",
+                "Capacitors: If needed, to model input impedance as a parallel RC circuit.",
+                "Breadboard or PCB: For assembling the circuit.",
+                "Connecting Wires: To make connections between components."
+            ],
+            "procedure": {
+                "Measuring Input Impedance": [
+                    "Circuit Setup:\n   - Connect the Op-Amp in your desired configuration (e.g., inverting, non-inverting).\n   - Ensure the power supply is connected to the Op-Amp.\n   - Use a function generator to apply a small AC signal at the input.",
+                    "Measure Input Voltage and Current:\n   - Place an oscilloscope or multimeter across the input terminals to measure the input voltage (\\(V_{in}\\)).\n   - Insert a known high-value resistor (e.g., 1 M\u03a9) in series with the input to measure the current (\\(I_{in}\\)) using another meter.",
+                    "Calculate Input Impedance:\n   - Use Ohm\u2019s Law: \\(Z_{in} = \\frac{V_{in}}{I_{in}}\\).\n   - Repeat measurements at different frequencies if necessary, as impedance can vary with frequency."
+                ],
+                "Measuring Output Impedance": [
+                    "Circuit Setup:\n   - Maintain the same Op-Amp configuration.\n   - Connect a load resistor (\\(R_L\\)) across the output terminals.",
+                    "Measure Output Voltage Without Load:\n   - Measure the open-circuit output voltage (\\(V_{out,oc}\\)) using an oscilloscope or multimeter.",
+                    "Measure Output Voltage With Load:\n   - Reconnect the load resistor and measure the loaded output voltage (\\(V_{out,l}\\)).",
+                    "Calculate Output Impedance:\n   - Use the formula: \\(Z_{out} = R_L \\left(\\frac{V_{out,oc} - V_{out,l}}{V_{out,l}}\\right)\\)."
+                ],
+                "Safety Procedures": [
+                    "Power Supply: Ensure the power supply voltage is within the Op-Amp's specified range to prevent damage.",
+                    "Component Ratings: Use components with appropriate ratings for voltage and current.",
+                    "Handling Equipment: Be cautious when using oscilloscopes and multimeters, especially around high voltages.",
+                    "Static Electricity: Discharge any static electricity before handling sensitive electronic components."
+                ]
+            }
+        },
+        {
+            "title": "To generate and analyze Lissajous figures using an oscilloscope by applying two sinusoidal signals with different frequencies.",
+            "objective": "To generate and analyze Lissajous figures using an oscilloscope with two sinusoidal signals of different frequencies, you will need the following materials and follow these steps:",
+            "materials": [
+                "**Oscilloscope**: A dual-channel digital oscilloscope is ideal for this experiment.",
+                "**Function Generators**: Two audio oscillators capable of generating sinusoidal waveforms (e.g., Global Specialties 200 kHz Function Generator 2001A).",
+                "**Connectors and Cables**: To connect the function generators to the oscilloscope channels.",
+                "**Computer Interface** (optional): For data analysis or controlling the function generators via software."
+            ],
+            "procedure": [
+                {
+                    "step": "Setup the Oscilloscope",
+                    "details": [
+                        "- Turn on the oscilloscope and familiarize yourself with its controls, including channel selection, time base adjustment, and trigger settings.",
+                        "- Set the oscilloscope to XY mode if available, which allows you to display Lissajous figures."
+                    ]
+                },
+                {
+                    "step": "Connect Function Generators",
+                    "details": [
+                        "- Connect the output of the first function generator to Channel 1 (X-axis) of the oscilloscope.",
+                        "- Connect the output of the second function generator to Channel 2 (Y-axis)."
+                    ]
+                },
+                {
+                    "step": "Configure Signal Parameters",
+                    "details": [
+                        "- Set both function generators to produce sine waves.",
+                        "- Adjust the amplitude, frequency, and offset for each signal as needed. A common starting point is a peak-to-peak amplitude of 2V, a frequency of 1kHz, and a 0V offset."
+                    ]
+                },
+                {
+                    "step": "Generate Lissajous Figures",
+                    "details": [
+                        "- Start with both function generators set to the same frequency (e.g., 1kHz) to observe a simple circle.",
+                        "- Gradually change the frequency of one generator while keeping the other constant to see how the shape of the figure changes.",
+                        "- Experiment with different frequency ratios (e.g., 2:3, 3:4) to explore various Lissajous patterns."
+                    ]
+                },
+                {
+                    "step": "Analyze the Figures",
+                    "details": [
+                        "- Observe and record the shapes formed on the oscilloscope screen as you vary the frequencies.",
+                        "- Note how the figures change with different frequency ratios and amplitudes."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "To study the magnetic field produced by a solenoid and verify the relationship between current and magnetic field strength.",
+            "objective": "To study the magnetic field produced by a solenoid and verify the relationship between current and magnetic field strength, you'll need specific materials and follow a detailed procedure. Here's how you can set up your experiment:",
+            "materials": [
+                "Solenoid: A coil of wire with multiple turns.",
+                "Power Supply: Adjustable DC power supply to vary the current through the solenoid.",
+                "Ammeter: To measure the current flowing through the solenoid.",
+                "Magnetic Field Sensor or Hall Effect Probe: For measuring the magnetic field strength inside and around the solenoid.",
+                "Iron Core (optional): A ferromagnetic material like an iron rod to insert into the solenoid for enhancing the magnetic field.",
+                "Connecting Wires: To connect the components together.",
+                "Ruler or Measuring Tape: For measuring distances accurately.",
+                "Data Logger or Computer Interface: If using a digital sensor, to record and analyze data."
+            ],
+            "procedure": [
+                {
+                    "step": "Setup",
+                    "details": "- Connect the solenoid to the power supply through an ammeter in series to measure the current flowing through it. - Place the magnetic field sensor inside the solenoid at its center or along its length to measure the magnetic field strength."
+                },
+                {
+                    "step": "Calibration",
+                    "details": "- Ensure that your magnetic field sensor is calibrated according to the manufacturer's instructions before starting measurements."
+                },
+                {
+                    "step": "Data Collection",
+                    "details": "- Set the power supply to a low initial current. - Record the current from the ammeter and the corresponding magnetic field reading from the sensor. - Gradually increase the current in small increments, recording the magnetic field strength at each step until you reach the maximum safe current for your setup."
+                },
+                {
+                    "step": "Repetition with Iron Core",
+                    "details": "- Insert an iron core into the solenoid and repeat the measurements to observe changes in the magnetic field strength due to the presence of a ferromagnetic material."
+                },
+                {
+                    "step": "Data Analysis",
+                    "details": "- Plot the magnetic field strength against the current for both cases (with and without the iron core). - Analyze how the magnetic field varies with the current, verifying that it is directly proportional as per theoretical predictions."
+                }
+            ]
+        }
+    ]
+}
