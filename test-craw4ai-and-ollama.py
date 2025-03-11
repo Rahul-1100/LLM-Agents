@@ -150,7 +150,7 @@ def test_llm_with_ollama(tester: Crawl4AiTester,url:str,schema:Union[dict,None]=
         "extraction_config": {
             "type": "llm",
             "params": {
-                "provider": "jacob-ebey/phi4-tools:latest",
+                "provider": "ollama/jacob-ebey/phi4-tools:latest",
                 "base_url":"http://192.168.23.138:11439",
                 "schema": schema,
                 "extraction_type": "schema",
