@@ -104,22 +104,75 @@ def test_docker_deployment(version="basic"):
             time.sleep(5)
 
     # Test cases based on version
-    # test_basic_crawl_direct(tester)
+    test_basic_crawl_direct(tester)
     # test_basic_crawl(tester)
     # test_basic_crawl(tester)
     # test_basic_crawl_sync(tester)
 
     # if version in ["full", "transformer"]:
-    #     test_cosine_extraction(tester)
+    # print(test_cosine_extraction(tester))
 
     # test_js_execution(tester)
     # test_css_selector(tester)
     # test_structured_extraction(tester)
     # test_llm_extraction(tester)
     print(test_llm_with_ollama(tester,url="https://techcommunity.microsoft.com/blog/machinelearningblog/phi-4-quantization-and-inference-speedup/4360047"))
-    
 
+def test_basic_crawl_direct(tester: Crawl4AiTester):
+    print("\n=== Testing Basic Crawl (Direct) ===")
+    request = {
+        "urls": "https://techcommunity.microsoft.com/blog/machinelearningblog/phi-4-quantization-and-inference-speedup/4360047",
+        "priority": 10,
+        # "session_id": "test"
+        "cache_mode": "bypass",  # or "enabled", "disabled", "read_only", "write_only"
+    }
 
+    result = tester.crawl_direct(request)
+    print(result['result']['markdown'])
+    print(f"Basic crawl result length: {len(result['result']['markdown'])}")
+    assert result["result"]["success"]
+    assert len(result["result"]["markdown"]) > 0
+
+def test_css_selector(tester: Crawl4AiTester):
+    print("\n=== Testing CSS Selector ===")
+    request = {
+        "urls": "https://www.nbcnews.com/business",
+        "priority": 7,
+        "css_selector": ".wide-tease-item__description",
+        "crawler_params": {"headless": True},
+        "extra": {"word_count_threshold": 10},
+    }
+
+    result = tester.submit_and_wait(request)
+    print(result['result']['markdown'])
+    print(f"CSS selector result length: {len(result['result']['markdown'])}")
+    assert result["result"]["success"]
+
+def test_cosine_extraction(tester: Crawl4AiTester):
+    print("\n=== Testing Cosine Extraction ===")
+    request = {
+        "urls": "https://www.nbcnews.com/business",
+        "priority": 8,
+        "extraction_config": {
+            "type": "cosine",
+            "params": {
+                "semantic_filter": "business finance economy",
+                "word_count_threshold": 10,
+                "max_dist": 0.2,
+                "top_k": 3,
+            },
+        },
+    }
+
+    try:
+        result = tester.submit_and_wait(request)
+        extracted = json.loads(result["result"]["extracted_content"])
+        print(extracted)
+        print(f"Extracted {len(extracted)} text clusters")
+        print("First cluster tags:", extracted[0]["tags"])
+        assert result["result"]["success"]
+    except Exception as e:
+        print(f"Cosine extraction test failed: {str(e)}")
 
 
 def test_llm_with_ollama(tester: Crawl4AiTester,url:str,schema:Union[dict,None]=None):
@@ -169,6 +222,6 @@ def test_llm_with_ollama(tester: Crawl4AiTester,url:str,schema:Union[dict,None]=
     except Exception as e:
         print(f"Ollama extraction test failed: {str(e)}")
 
-crawler_result = test_llm_with_ollama(tester=Crawl4AiTester(), url="https://techcommunity.microsoft.com/blog/machinelearningblog/phi-4-quantization-and-inference-speedup/4360047", schema=crawlerSchema.model_json_schema()['properties'])
-
-print(crawler_result)
+# crawler_result = test_llm_with_ollama(tester=Crawl4AiTester(), url="https://techcommunity.microsoft.com/blog/machinelearningblog/phi-4-quantization-and-inference-speedup/4360047", schema=crawlerSchema.model_json_schema()['properties'])
+test_docker_deployment()
+# print(crawler_result)
