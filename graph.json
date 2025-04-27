@@ -1,0 +1,1073 @@
+[
+    {
+        "output": {
+            "nodes": [
+                {
+                    "node_id": "initial_state",
+                    "description": "Initial state with no components connected",
+                    "materials_present": [
+                        "Breadboard"
+                    ],
+                    "properties": {},
+                    "is_initial": true,
+                    "is_final": false,
+                    "corresponds_to_step": null
+                },
+                {
+                    "node_id": "state_1",
+                    "description": "Power supply connected to LM741",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": false
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 1
+                },
+                {
+                    "node_id": "state_2",
+                    "description": "1kΩ resistor connected between input signal and non-inverting input",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 2
+                },
+                {
+                    "node_id": "state_3",
+                    "description": "Output connected to inverting input",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 3
+                },
+                {
+                    "node_id": "state_4",
+                    "description": "10kΩ resistor connected between inverting input and ground",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 4
+                },
+                {
+                    "node_id": "state_5",
+                    "description": "10µF capacitor connected between power supply rails",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Capacitors (10µF)"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true,
+                        "power_supply_filtered": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 5
+                },
+                {
+                    "node_id": "state_6",
+                    "description": "100nF capacitor connected between output and ground",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Capacitors (10µF)",
+                        "Capacitors (100nF)"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true,
+                        "power_supply_filtered": true,
+                        "output_filtered": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 6
+                },
+                {
+                    "node_id": "state_7",
+                    "description": "Signal generator connected to input",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Capacitors (10µF)",
+                        "Capacitors (100nF)",
+                        "Signal generator"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true,
+                        "power_supply_filtered": true,
+                        "output_filtered": true,
+                        "input_signal_connected": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 7
+                },
+                {
+                    "node_id": "state_8",
+                    "description": "Oscilloscope connected to input and output",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Capacitors (10µF)",
+                        "Capacitors (100nF)",
+                        "Signal generator",
+                        "Oscilloscope"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true,
+                        "power_supply_filtered": true,
+                        "output_filtered": true,
+                        "input_signal_connected": true,
+                        "oscilloscope_connected": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 8
+                },
+                {
+                    "node_id": "state_9",
+                    "description": "Power supply turned on",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Capacitors (10µF)",
+                        "Capacitors (100nF)",
+                        "Signal generator",
+                        "Oscilloscope"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true,
+                        "power_supply_filtered": true,
+                        "output_filtered": true,
+                        "input_signal_connected": true,
+                        "oscilloscope_connected": true,
+                        "power_supply_on": true
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 9
+                },
+                {
+                    "node_id": "final_state",
+                    "description": "Experiment completed, observing output",
+                    "materials_present": [
+                        "Breadboard",
+                        "LM741 Operational Amplifier",
+                        "Power supply",
+                        "Jumper wires",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Capacitors (10µF)",
+                        "Capacitors (100nF)",
+                        "Signal generator",
+                        "Oscilloscope"
+                    ],
+                    "properties": {
+                        "power_supply_connected": true,
+                        "lm741_configured": true,
+                        "input_resistor_connected": true,
+                        "voltage_follower_configured": true,
+                        "stabilizing_resistor_connected": true,
+                        "power_supply_filtered": true,
+                        "output_filtered": true,
+                        "input_signal_connected": true,
+                        "oscilloscope_connected": true,
+                        "power_supply_on": true
+                    },
+                    "is_initial": false,
+                    "is_final": true,
+                    "corresponds_to_step": 10
+                }
+            ],
+            "transitions": [
+                {
+                    "from_node_id": "initial_state",
+                    "to_node_id": "state_1",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "LM741 Operational Amplifier",
+                            "to": "Breadboard"
+                        }
+                    },
+                    "materials_used": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 1,
+                    "duration_estimate": 5,
+                    "safety_notes": "Ensure power supply is turned off before making connections"
+                },
+                {
+                    "from_node_id": "state_1",
+                    "to_node_id": "state_2",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Resistors (1kΩ)",
+                            "between": [
+                                "input signal",
+                                "non-inverting input (pin3)"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Resistors (1kΩ)",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 2,
+                    "duration_estimate": 2,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "state_2",
+                    "to_node_id": "state_3",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "from": "output (pin6)",
+                            "to": "inverting input (pin2)"
+                        }
+                    },
+                    "materials_used": [
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 3,
+                    "duration_estimate": 2,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "state_3",
+                    "to_node_id": "state_4",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Resistors (10kΩ)",
+                            "between": [
+                                "inverting input (pin2)",
+                                "ground"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Resistors (10kΩ)",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 4,
+                    "duration_estimate": 2,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "state_4",
+                    "to_node_id": "state_5",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Capacitors (10µF)",
+                            "between": [
+                                "+Vcc",
+                                "-Vee"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Capacitors (10µF)",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 5,
+                    "duration_estimate": 2,
+                    "safety_notes": "Handle capacitors with care, correct polarity"
+                },
+                {
+                    "from_node_id": "state_5",
+                    "to_node_id": "state_6",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Capacitors (100nF)",
+                            "between": [
+                                "output",
+                                "ground"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Capacitors (100nF)",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 6,
+                    "duration_estimate": 2,
+                    "safety_notes": "Ensure proper decoupling"
+                },
+                {
+                    "from_node_id": "state_6",
+                    "to_node_id": "state_7",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Signal generator",
+                            "to": "input"
+                        }
+                    },
+                    "materials_used": [
+                        "Signal generator",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 7,
+                    "duration_estimate": 3,
+                    "safety_notes": "Ensure equipment is powered off before connecting"
+                },
+                {
+                    "from_node_id": "state_7",
+                    "to_node_id": "state_8",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Oscilloscope",
+                            "to": [
+                                "input",
+                                "output"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Oscilloscope",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 8,
+                    "duration_estimate": 5,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "state_8",
+                    "to_node_id": "state_9",
+                    "action": {
+                        "action_name": "turn_on",
+                        "parameters": {
+                            "component": "Power supply"
+                        }
+                    },
+                    "materials_used": [
+                        "Power supply"
+                    ],
+                    "corresponds_to_step": 9,
+                    "duration_estimate": 5,
+                    "safety_notes": "Ensure proper grounding and safety measures"
+                },
+                {
+                    "from_node_id": "state_9",
+                    "to_node_id": "final_state",
+                    "action": {
+                        "action_name": "observe",
+                        "parameters": {
+                            "component": "output waveform"
+                        }
+                    },
+                    "materials_used": [
+                        "Oscilloscope"
+                    ],
+                    "corresponds_to_step": 10,
+                    "duration_estimate": 5,
+                    "safety_notes": null
+                }
+            ],
+            "available_vr_actions": [
+                "connect",
+                "place",
+                "adjust",
+                "observe",
+                "disconnect",
+                "turn_on",
+                "turn_off",
+                "measure"
+            ],
+            "available_vr_materials": [
+                "LM741 Operational Amplifier",
+                "Breadboard",
+                "Jumper wires",
+                "Power supply",
+                "Resistors (1kΩ)",
+                "Resistors (10kΩ)",
+                "Signal generator",
+                "Multimeter"
+            ],
+            "missing_materials": [
+                "Capacitors (10µF)",
+                "Capacitors (100nF)",
+                "Oscilloscope"
+            ],
+            "missing_actions": []
+        }
+    },
+    {
+        "output": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "nodes": [
+                {
+                    "node_id": "initial_state",
+                    "description": "All components are present but not connected",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": true,
+                    "is_final": false,
+                    "corresponds_to_step": null
+                },
+                {
+                    "node_id": "components_placed",
+                    "description": "Components are placed on the breadboard",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 1
+                },
+                {
+                    "node_id": "circuit_connected",
+                    "description": "Circuit is fully connected",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 2
+                },
+                {
+                    "node_id": "power_supply_connected",
+                    "description": "Power supply is connected and turned on",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {
+                        "power_status": "on"
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 3
+                },
+                {
+                    "node_id": "signal_generator_connected",
+                    "description": "Signal generator is connected",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 4
+                },
+                {
+                    "node_id": "measurements_taken",
+                    "description": "Measurements are taken using the multimeter",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 5
+                },
+                {
+                    "node_id": "final_state",
+                    "description": "Experiment is complete",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": true,
+                    "corresponds_to_step": 6
+                }
+            ],
+            "transitions": [
+                {
+                    "from_node_id": "initial_state",
+                    "to_node_id": "components_placed",
+                    "action": {
+                        "action_name": "place",
+                        "parameters": {
+                            "components": [
+                                "LM741 Operational Amplifier",
+                                "Resistors (1kΩ)",
+                                "Resistors (10kΩ)"
+                            ],
+                            "on": "Breadboard"
+                        }
+                    },
+                    "materials_used": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)"
+                    ],
+                    "corresponds_to_step": 1,
+                    "duration_estimate": 2,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "components_placed",
+                    "to_node_id": "circuit_connected",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "components": [
+                                "LM741 Operational Amplifier",
+                                "Resistors (1kΩ)",
+                                "Resistors (10kΩ)"
+                            ],
+                            "using": "Jumper wires"
+                        }
+                    },
+                    "materials_used": [
+                        "Jumper wires",
+                        "LM741 Operational Amplifier",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)"
+                    ],
+                    "corresponds_to_step": 2,
+                    "duration_estimate": 3,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "circuit_connected",
+                    "to_node_id": "power_supply_connected",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Power supply",
+                            "to": "Breadboard"
+                        }
+                    },
+                    "materials_used": [
+                        "Power supply",
+                        "Breadboard",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 3,
+                    "duration_estimate": 1,
+                    "safety_notes": "Ensure correct polarity"
+                },
+                {
+                    "from_node_id": "power_supply_connected",
+                    "to_node_id": "power_supply_connected",
+                    "action": {
+                        "action_name": "turn_on",
+                        "parameters": {
+                            "component": "Power supply"
+                        }
+                    },
+                    "materials_used": [
+                        "Power supply"
+                    ],
+                    "corresponds_to_step": 3,
+                    "duration_estimate": 1,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "power_supply_connected",
+                    "to_node_id": "signal_generator_connected",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "component": "Signal generator",
+                            "to": "Breadboard"
+                        }
+                    },
+                    "materials_used": [
+                        "Signal generator",
+                        "Breadboard",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 4,
+                    "duration_estimate": 2,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "signal_generator_connected",
+                    "to_node_id": "measurements_taken",
+                    "action": {
+                        "action_name": "measure",
+                        "parameters": {
+                            "using": "Multimeter",
+                            "at": "Breadboard"
+                        }
+                    },
+                    "materials_used": [
+                        "Multimeter",
+                        "Breadboard"
+                    ],
+                    "corresponds_to_step": 5,
+                    "duration_estimate": 5,
+                    "safety_notes": "Ensure correct measurement settings"
+                },
+                {
+                    "from_node_id": "measurements_taken",
+                    "to_node_id": "final_state",
+                    "action": {
+                        "action_name": "observe",
+                        "parameters": {}
+                    },
+                    "materials_used": [],
+                    "corresponds_to_step": 6,
+                    "duration_estimate": 1,
+                    "safety_notes": null
+                }
+            ],
+            "available_vr_actions": [
+                "connect",
+                "place",
+                "adjust",
+                "observe",
+                "disconnect",
+                "turn_on",
+                "turn_off",
+                "measure"
+            ],
+            "available_vr_materials": [
+                "LM741 Operational Amplifier",
+                "Breadboard",
+                "Jumper wires",
+                "Power supply",
+                "Resistors (1kΩ)",
+                "Resistors (10kΩ)",
+                "Signal generator",
+                "Multimeter"
+            ],
+            "missing_materials": [],
+            "missing_actions": []
+        }
+    },
+    {
+        "output": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "nodes": [
+                {
+                    "node_id": "initial_state",
+                    "description": "All components are present but not connected",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": true,
+                    "is_final": false,
+                    "corresponds_to_step": null
+                },
+                {
+                    "node_id": "state_1",
+                    "description": "Breadboard placed on workspace",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 1
+                },
+                {
+                    "node_id": "state_2",
+                    "description": "LM741 Operational Amplifier placed on breadboard",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {},
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 2
+                },
+                {
+                    "node_id": "state_3",
+                    "description": "Components connected according to inverting amplifier circuit diagram",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {
+                        "circuit_configured": "inverting amplifier"
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 3
+                },
+                {
+                    "node_id": "state_4",
+                    "description": "Power supply connected and turned on",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {
+                        "power_supply_status": "on"
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 4
+                },
+                {
+                    "node_id": "state_5",
+                    "description": "Signal generator connected and configured",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {
+                        "signal_generator_status": "configured"
+                    },
+                    "is_initial": false,
+                    "is_final": false,
+                    "corresponds_to_step": 5
+                },
+                {
+                    "node_id": "state_6",
+                    "description": "Measurements taken using multimeter",
+                    "materials_present": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard",
+                        "Jumper wires",
+                        "Power supply",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Signal generator",
+                        "Multimeter"
+                    ],
+                    "properties": {
+                        "measurements_taken": true
+                    },
+                    "is_initial": false,
+                    "is_final": true,
+                    "corresponds_to_step": 6
+                }
+            ],
+            "transitions": [
+                {
+                    "from_node_id": "initial_state",
+                    "to_node_id": "state_1",
+                    "action": {
+                        "action_name": "place",
+                        "parameters": {
+                            "object": "Breadboard",
+                            "location": "workspace"
+                        }
+                    },
+                    "materials_used": [
+                        "Breadboard"
+                    ],
+                    "corresponds_to_step": 1,
+                    "duration_estimate": 1,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "state_1",
+                    "to_node_id": "state_2",
+                    "action": {
+                        "action_name": "place",
+                        "parameters": {
+                            "object": "LM741 Operational Amplifier",
+                            "location": "Breadboard"
+                        }
+                    },
+                    "materials_used": [
+                        "LM741 Operational Amplifier",
+                        "Breadboard"
+                    ],
+                    "corresponds_to_step": 2,
+                    "duration_estimate": 1,
+                    "safety_notes": null
+                },
+                {
+                    "from_node_id": "state_2",
+                    "to_node_id": "state_3",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "components": [
+                                "LM741 Operational Amplifier",
+                                "Resistors (1kΩ)",
+                                "Resistors (10kΩ)",
+                                "Jumper wires"
+                            ],
+                            "configuration": "inverting amplifier circuit"
+                        }
+                    },
+                    "materials_used": [
+                        "LM741 Operational Amplifier",
+                        "Resistors (1kΩ)",
+                        "Resistors (10kΩ)",
+                        "Jumper wires",
+                        "Breadboard"
+                    ],
+                    "corresponds_to_step": 3,
+                    "duration_estimate": 3,
+                    "safety_notes": "Ensure proper connections to avoid short circuits"
+                },
+                {
+                    "from_node_id": "state_3",
+                    "to_node_id": "state_4",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "components": [
+                                "Power supply",
+                                "Breadboard"
+                            ],
+                            "connections": [
+                                "positive to VCC",
+                                "negative to GND"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Power supply",
+                        "Breadboard",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 4,
+                    "duration_estimate": 2,
+                    "safety_notes": "Double-check polarity to avoid damaging components"
+                },
+                {
+                    "from_node_id": "state_4",
+                    "to_node_id": "state_5",
+                    "action": {
+                        "action_name": "connect",
+                        "parameters": {
+                            "components": [
+                                "Signal generator",
+                                "Breadboard"
+                            ],
+                            "connections": [
+                                "signal to input"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Signal generator",
+                        "Breadboard",
+                        "Jumper wires"
+                    ],
+                    "corresponds_to_step": 5,
+                    "duration_estimate": 2,
+                    "safety_notes": "Set appropriate signal levels to avoid distortion"
+                },
+                {
+                    "from_node_id": "state_5",
+                    "to_node_id": "state_6",
+                    "action": {
+                        "action_name": "measure",
+                        "parameters": {
+                            "device": "Multimeter",
+                            "measurement_points": [
+                                "input",
+                                "output"
+                            ]
+                        }
+                    },
+                    "materials_used": [
+                        "Multimeter",
+                        "Breadboard"
+                    ],
+                    "corresponds_to_step": 6,
+                    "duration_estimate": 2,
+                    "safety_notes": "Be cautious with measurement probes to avoid short circuits"
+                }
+            ],
+            "available_vr_actions": [
+                "connect",
+                "place",
+                "adjust",
+                "observe",
+                "disconnect",
+                "turn_on",
+                "turn_off",
+                "measure"
+            ],
+            "available_vr_materials": [
+                "LM741 Operational Amplifier",
+                "Breadboard",
+                "Jumper wires",
+                "Power supply",
+                "Resistors (1kΩ)",
+                "Resistors (10kΩ)",
+                "Signal generator",
+                "Multimeter"
+            ],
+            "missing_materials": [],
+            "missing_actions": []
+        }
+    }
+]
