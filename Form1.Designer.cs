@@ -32,156 +32,165 @@ namespace GraphGameGUI // Make sure this matches your project's namespace
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLoadGraph = new System.Windows.Forms.Button();
-            this.lblStateIdLabel = new System.Windows.Forms.Label(); // Static label for State ID
-            this.lblStateId = new System.Windows.Forms.Label();      // Value label for State ID
-            this.lblDescriptionLabel = new System.Windows.Forms.Label(); // Static label for Description
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.lblMaterialsLabel = new System.Windows.Forms.Label(); // Static label for Materials
-            this.lstMaterials = new System.Windows.Forms.ListBox();
-            this.lblActionsLabel = new System.Windows.Forms.Label(); // Static label for Actions
-            this.flpActions = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblStatusLabel = new System.Windows.Forms.Label(); // Static label for Status
-            this.lblStatus = new System.Windows.Forms.Label();      // Value label for Status
-            this.SuspendLayout();
-            //
+            btnLoadGraph = new Button();
+            lblStateIdLabel = new Label();
+            lblStateId = new Label();
+            lblDescriptionLabel = new Label();
+            txtDescription = new TextBox();
+            lblMaterialsLabel = new Label();
+            lstMaterials = new ListBox();
+            lblActionsLabel = new Label();
+            flpActions = new FlowLayoutPanel();
+            lblStatusLabel = new Label();
+            lblStatus = new Label();
+            genGraphBtn = new Button();
+            SuspendLayout();
+            // 
             // btnLoadGraph
-            //
-            this.btnLoadGraph.Location = new System.Drawing.Point(12, 12);
-            this.btnLoadGraph.Name = "btnLoadGraph";
-            this.btnLoadGraph.Size = new System.Drawing.Size(130, 28);
-            this.btnLoadGraph.TabIndex = 0;
-            this.btnLoadGraph.Text = "Load Graph File...";
-            this.btnLoadGraph.UseVisualStyleBackColor = true;
-            // Link the event handler from Form1.cs
-            this.btnLoadGraph.Click += new System.EventHandler(this.btnLoadGraph_Click);
-            //
+            // 
+            btnLoadGraph.Location = new Point(14, 16);
+            btnLoadGraph.Margin = new Padding(3, 4, 3, 4);
+            btnLoadGraph.Name = "btnLoadGraph";
+            btnLoadGraph.Size = new Size(149, 37);
+            btnLoadGraph.TabIndex = 0;
+            btnLoadGraph.Text = "Load Graph File...";
+            btnLoadGraph.UseVisualStyleBackColor = true;
+            btnLoadGraph.Click += btnLoadGraph_Click;
+            // 
             // lblStateIdLabel
-            //
-            this.lblStateIdLabel.AutoSize = true;
-            this.lblStateIdLabel.Location = new System.Drawing.Point(12, 55);
-            this.lblStateIdLabel.Name = "lblStateIdLabel";
-            this.lblStateIdLabel.Size = new System.Drawing.Size(53, 15); // Adjust font size if needed
-            this.lblStateIdLabel.TabIndex = 1;
-            this.lblStateIdLabel.Text = "State ID:";
-            //
+            // 
+            lblStateIdLabel.AutoSize = true;
+            lblStateIdLabel.Location = new Point(14, 73);
+            lblStateIdLabel.Name = "lblStateIdLabel";
+            lblStateIdLabel.Size = new Size(65, 20);
+            lblStateIdLabel.TabIndex = 1;
+            lblStateIdLabel.Text = "State ID:";
+            // 
             // lblStateId
-            //
-            this.lblStateId.AutoSize = true;
-            this.lblStateId.Location = new System.Drawing.Point(71, 55); // Position next to label
-            this.lblStateId.Name = "lblStateId";
-            this.lblStateId.Size = new System.Drawing.Size(105, 15); // Adjust font size if needed
-            this.lblStateId.TabIndex = 2;
-            this.lblStateId.Text = "(No graph loaded)";
-            //
+            // 
+            lblStateId.AutoSize = true;
+            lblStateId.Location = new Point(81, 73);
+            lblStateId.Name = "lblStateId";
+            lblStateId.Size = new Size(133, 20);
+            lblStateId.TabIndex = 2;
+            lblStateId.Text = "(No graph loaded)";
+            // 
             // lblDescriptionLabel
-            //
-            this.lblDescriptionLabel.AutoSize = true;
-            this.lblDescriptionLabel.Location = new System.Drawing.Point(12, 85);
-            this.lblDescriptionLabel.Name = "lblDescriptionLabel";
-            this.lblDescriptionLabel.Size = new System.Drawing.Size(70, 15); // Adjust font size if needed
-            this.lblDescriptionLabel.TabIndex = 3;
-            this.lblDescriptionLabel.Text = "Description:";
-            //
+            // 
+            lblDescriptionLabel.AutoSize = true;
+            lblDescriptionLabel.Location = new Point(14, 113);
+            lblDescriptionLabel.Name = "lblDescriptionLabel";
+            lblDescriptionLabel.Size = new Size(88, 20);
+            lblDescriptionLabel.TabIndex = 3;
+            lblDescriptionLabel.Text = "Description:";
+            // 
             // txtDescription
-            //
-            this.txtDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right))); // Allow resizing horizontally
-            this.txtDescription.Location = new System.Drawing.Point(12, 103);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.ReadOnly = true;
-            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescription.Size = new System.Drawing.Size(460, 80); // Adjust size as needed
-            this.txtDescription.TabIndex = 4;
-            //
+            // 
+            txtDescription.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtDescription.Location = new Point(14, 137);
+            txtDescription.Margin = new Padding(3, 4, 3, 4);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.ReadOnly = true;
+            txtDescription.ScrollBars = ScrollBars.Vertical;
+            txtDescription.Size = new Size(525, 105);
+            txtDescription.TabIndex = 4;
+            // 
             // lblMaterialsLabel
-            //
-            this.lblMaterialsLabel.AutoSize = true;
-            this.lblMaterialsLabel.Location = new System.Drawing.Point(12, 196);
-            this.lblMaterialsLabel.Name = "lblMaterialsLabel";
-            this.lblMaterialsLabel.Size = new System.Drawing.Size(98, 15); // Adjust font size if needed
-            this.lblMaterialsLabel.TabIndex = 5;
-            this.lblMaterialsLabel.Text = "Materials Present:";
-            //
+            // 
+            lblMaterialsLabel.AutoSize = true;
+            lblMaterialsLabel.Location = new Point(14, 261);
+            lblMaterialsLabel.Name = "lblMaterialsLabel";
+            lblMaterialsLabel.Size = new Size(125, 20);
+            lblMaterialsLabel.TabIndex = 5;
+            lblMaterialsLabel.Text = "Materials Present:";
+            // 
             // lstMaterials
-            //
-            this.lstMaterials.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right))); // Allow resizing horizontally
-            this.lstMaterials.FormattingEnabled = true;
-            this.lstMaterials.ItemHeight = 15; // Adjust if font size changes
-            this.lstMaterials.Location = new System.Drawing.Point(12, 214);
-            this.lstMaterials.Name = "lstMaterials";
-            this.lstMaterials.Size = new System.Drawing.Size(460, 94); // Adjust size as needed
-            this.lstMaterials.TabIndex = 6;
-            //
+            // 
+            lstMaterials.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lstMaterials.FormattingEnabled = true;
+            lstMaterials.Location = new Point(14, 285);
+            lstMaterials.Margin = new Padding(3, 4, 3, 4);
+            lstMaterials.Name = "lstMaterials";
+            lstMaterials.Size = new Size(525, 124);
+            lstMaterials.TabIndex = 6;
+            // 
             // lblActionsLabel
-            //
-            this.lblActionsLabel.AutoSize = true;
-            this.lblActionsLabel.Location = new System.Drawing.Point(12, 321);
-            this.lblActionsLabel.Name = "lblActionsLabel";
-            this.lblActionsLabel.Size = new System.Drawing.Size(99, 15); // Adjust font size if needed
-            this.lblActionsLabel.TabIndex = 7;
-            this.lblActionsLabel.Text = "Available Actions:";
-            //
+            // 
+            lblActionsLabel.AutoSize = true;
+            lblActionsLabel.Location = new Point(14, 428);
+            lblActionsLabel.Name = "lblActionsLabel";
+            lblActionsLabel.Size = new Size(127, 20);
+            lblActionsLabel.TabIndex = 7;
+            lblActionsLabel.Text = "Available Actions:";
+            // 
             // flpActions
-            //
-            this.flpActions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right))); // Allow resizing all directions
-            this.flpActions.AutoScroll = true; // Add scrollbars if content overflows
-            this.flpActions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink; // Let it adjust, but AutoScroll is better here
-            this.flpActions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flpActions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpActions.Location = new System.Drawing.Point(12, 339);
-            this.flpActions.Name = "flpActions";
-            this.flpActions.Size = new System.Drawing.Size(460, 120); // Adjust size as needed
-            this.flpActions.TabIndex = 8;
-            this.flpActions.WrapContents = false; // Keep buttons in a single column
-            //
+            // 
+            flpActions.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flpActions.AutoScroll = true;
+            flpActions.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flpActions.BorderStyle = BorderStyle.FixedSingle;
+            flpActions.FlowDirection = FlowDirection.TopDown;
+            flpActions.Location = new Point(14, 452);
+            flpActions.Margin = new Padding(3, 4, 3, 4);
+            flpActions.Name = "flpActions";
+            flpActions.Size = new Size(525, 159);
+            flpActions.TabIndex = 8;
+            flpActions.WrapContents = false;
+            // 
             // lblStatusLabel
-            //
-            this.lblStatusLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left))); // Anchor to bottom-left
-            this.lblStatusLabel.AutoSize = true;
-            this.lblStatusLabel.Location = new System.Drawing.Point(12, 472); // Position near bottom
-            this.lblStatusLabel.Name = "lblStatusLabel";
-            this.lblStatusLabel.Size = new System.Drawing.Size(42, 15); // Adjust font size if needed
-            this.lblStatusLabel.TabIndex = 9;
-            this.lblStatusLabel.Text = "Status:";
-            //
+            // 
+            lblStatusLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblStatusLabel.AutoSize = true;
+            lblStatusLabel.Location = new Point(14, 629);
+            lblStatusLabel.Name = "lblStatusLabel";
+            lblStatusLabel.Size = new Size(52, 20);
+            lblStatusLabel.TabIndex = 9;
+            lblStatusLabel.Text = "Status:";
+            // 
             // lblStatus
-            //
-            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));// Anchor to bottom-left
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(60, 472); // Position next to label
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(185, 15); // Adjust font size if needed
-            this.lblStatus.TabIndex = 10;
-            this.lblStatus.Text = "Please load a graph file to begin.";
-            //
+            // 
+            lblStatus.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblStatus.AutoSize = true;
+            lblStatus.Location = new Point(69, 629);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(228, 20);
+            lblStatus.TabIndex = 10;
+            lblStatus.Text = "Please load a graph file to begin.";
+            // 
+            // genGraphBtn
+            // 
+            genGraphBtn.Location = new Point(169, 16);
+            genGraphBtn.Name = "genGraphBtn";
+            genGraphBtn.Size = new Size(175, 35);
+            genGraphBtn.TabIndex = 11;
+            genGraphBtn.Text = "Generate Graph";
+            genGraphBtn.UseVisualStyleBackColor = true;
+            genGraphBtn.Click += btnGenerateGraph_Click;
+            // 
             // Form1
-            //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F); // Standard font scaling
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 496); // Overall window size - ADJUST AS NEEDED
-            // Add all controls to the Form's Controls collection
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.lblStatusLabel);
-            this.Controls.Add(this.flpActions);
-            this.Controls.Add(this.lblActionsLabel);
-            this.Controls.Add(this.lstMaterials);
-            this.Controls.Add(this.lblMaterialsLabel);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.lblDescriptionLabel);
-            this.Controls.Add(this.lblStateId);
-            this.Controls.Add(this.lblStateIdLabel);
-            this.Controls.Add(this.btnLoadGraph);
-            this.MinimumSize = new System.Drawing.Size(350, 500); // Set a minimum reasonable size
-            this.Name = "Form1";
-            this.Text = "Experiment Graph Game"; // Window title
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(553, 661);
+            Controls.Add(genGraphBtn);
+            Controls.Add(lblStatus);
+            Controls.Add(lblStatusLabel);
+            Controls.Add(flpActions);
+            Controls.Add(lblActionsLabel);
+            Controls.Add(lstMaterials);
+            Controls.Add(lblMaterialsLabel);
+            Controls.Add(txtDescription);
+            Controls.Add(lblDescriptionLabel);
+            Controls.Add(lblStateId);
+            Controls.Add(lblStateIdLabel);
+            Controls.Add(btnLoadGraph);
+            Margin = new Padding(3, 4, 3, 4);
+            MinimumSize = new Size(397, 651);
+            Name = "Form1";
+            Text = "Experiment Graph Game";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -199,5 +208,6 @@ namespace GraphGameGUI // Make sure this matches your project's namespace
         private System.Windows.Forms.Label lblMaterialsLabel;
         private System.Windows.Forms.Label lblActionsLabel;
         private System.Windows.Forms.Label lblStatusLabel;
+        private Button genGraphBtn;
     }
 }
